@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+// font-family: 'League Spartan', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
+// font-family: 'Kufam', sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Light mode
+$--background-light: #ebebeb;
+$--font-color-light: #1b1b1b;
+
+// Dark mode
+$--background-dark: #1b1b1b;
+$--font-color-dark: #ebebeb;
+
+// Font family
+$--font-family-spartan : 'League Spartan', sans-serif;
+$--font-family-kufam : 'Kufam', sans-serif;
+
+// Colors
+$--main-color: #2e66e2;
+$--main-color-darker: #1c2bff;
+
+
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
