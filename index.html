@@ -12,6 +12,9 @@
 
 <body>
     <nav class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg d-md-none" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>
         <ul class="menu-list">
             <li data-nav="Home"><a href="#Home">Home</a></li>
             <li data-nav="About"><a href="#About">About me</a></li>
@@ -19,7 +22,29 @@
             <li data-nav="Skills"><a href="#Skills">Skills</a></li>
             <li data-nav="Contact"><a href="#Contact">Contact</a></li>
         </ul>
+        <div class="lenguage-changer d-md-block">
+            <span>En</span>
+            <input type="checkbox" class="check english"/>
+            <span>Es</span>
+        </div>
     </nav>
+    <div class="container menu-small d-md-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-sun-fill d-none" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+        <div class="lenguage-changer">
+            <span>En</span>
+            <input type="checkbox" class="check english"/>
+            <span>Es</span>
+        </div>
+    </div>
     <header class="banner ObserverSection" id="Home">
         <div class="name-position-container">
             <h1>Hi, I'm Uriel Agüero</h1>
@@ -58,6 +83,7 @@
         </div>
     </header>
     <main>
+        
         <div class="svg-top-separator">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
@@ -74,16 +100,18 @@
         <div class="main-content ObserverSection" id="About">
             <section class="about-container">
                 <article class="about-info">
-                    <h3>About me<b>.</b></h3>
-                    <div class="about-text">
-                        <p>
-                            "Professionalizing my development skills for <b>+3 years</b>. <b>Self-taught</b>, <b>resilient</b>, and <b>dynamic</b>.
+                    <h3 class="about-title">About me<b>.</b></h3>
+                    <div class="about-text-container">
+                        <p class="about-text">
+                            Professionalizing my development skills for <b>+3 years</b>. <b>Self-taught</b>,
+                            <b>resilient</b>, and <b>dynamic</b>.
                             I enjoy teamwork and providing both support and guidance to achieve goals.
                             <br>
                             Passionate about creating appealing and functional interfaces. Committed to continuous
-                            learning and currently expanding my skills in Backend development. <b>Leadership</b>, <b>seriousness</b>,
+                            learning and currently expanding my skills in Backend development. <b>Leadership</b>,
+                            <b>seriousness</b>,
                             and <b>proactivity</b> to tackle new challenges. Contact me to chat about technology and
-                            professional opportunities!"
+                            professional opportunities!
                         </p>
                     </div>
                 </article>
@@ -97,50 +125,79 @@
                     class="fill-curves"></path>
             </svg>
         </div>
-        <div class="projects-section ObserverSection" id="Projects">
-            <h3>Projects<b>.</b></h3>
+        <div class="projects-section">
+            <h3 class="projects-title">Projects<b>.</b></h3>
+            <div class="projects-section-top row justify-content-md-around g-0 ObserverSection" id="Projects">
+                <a href="https://github.com/UriAg/EntregaFinal_ReactJS_Aguero">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/ProyectoReactJS.webp" class="card-img-top" alt="Proyecto ReactJS" />
+                            <div class="card-body">
+                                <h4 class="card-title">ReactJS e-commerce</h4>
+                                <p class="card-text reactjs-text">
+                                    The project demonstrates my ability to efficiently integrate data stored in
+                                    Firestore and create clean, optimal, and reusable ReactJS code. <br>
+                                    I have developed functionalities to store purchase records and perform essential validations. <br>
+                                    My skills in using custom and predefined hooks, routing, managing global data, and
+                                    real-time updates are notable and reflect my commitment to excellence in frontend
+                                    development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="projects-section-top row row-cols-1 row-cols-md-3 justify-content-md-around g-0">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/ProyectoDW.png" class="card-img-top" alt="Proyecto desarrollo web" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
-                            </p>
+                <a href="https://github.com/UriAg/PreEntrega3_DW_Aguero">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/ProyectoDW.webp" class="card-img-top" alt="Proyecto desarrollo web" />
+                            <div class="card-body">
+                                <h4 class="card-title">HTML E-commerce template</h4>
+                                <p class="card-text dw-text">
+                                    I have gained a solid understanding of the CSS preprocessor "SASS," comprehending its operation and implementing mixins, loops, imports, destructuring, variable definition, import and extend directives, as well as arithmetic operations. <br>
+                                    Furthermore, I have utilized JavaScript practices to observe DOM loading and element focus, resulting in customized actions based on state monitoring.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/ProyectoPHP.png" class="card-img-top" alt="Proyecto PHP" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a short card.</p>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="projects-section-bottom row row-cols-1 row-cols-md-3 justify-content-md-center g-0">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/ProyectoDW.png" class="card-img-top" alt="Proyecto ReactJS" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below as a natural
-                                lead-in to additional content.
-                            </p>
+            <div class="projects-section-bottom row justify-content-md-around g-0 ObserverSection" id="Projects">
+                <a href="https://github.com/UriAg/blv_e-commerce">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/ProyectoPHP.webp" class="card-img-top" alt="Proyecto PHP" />
+                            <div class="card-body">
+                                <h4 class="card-title">PHP e-commerce</h4>
+                                <p class="card-text php-text">
+                                    Demonstrated a comprehensive understanding of PHP, Apache, MySQL, and Mercury (XAMPP) in a personal project. <br>
+                                    Successfully orchestrated integrations with MercadoPago and skillfully utilized SQL databases. <br>
+                                    Implemented email sending functionality, managed user account creation and deletion, and introduced the capacity to add products to the database, all accompanied by meticulous field validations. <br>
+                                    Additionally, gained a profound understanding of the 'Less' CSS preprocessor, encompassing its functionalities and declaration methods.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+                <a href="https://github.com/UriAg/PreEntrega3_JS_Aguero">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/ProyectoJS.webp" class="card-img-top" alt="Proyecto ReactJS" />
+                            <div class="card-body">
+                                <h4 class="card-title">JS Records organizer</h4>
+                                <p class="card-text js-text">
+                                    Demonstrated proficiency in data fetching, data existence validation, and field validations, along with DOM manipulation, synchronous and asynchronous calls, and utilization of JavaScript libraries like "Toastify" and "SweetAlert" in this project. <br>
+                                    Managed creation, modification, and deletion of specific localStorage data, rendered information, and selected keys, employing advanced language syntax such as the spread operator, ternary operator,template literals, and logical AND operator to enhance readability and streamline code. <br>
+                                    Achieved minimal styling as per project guidelines.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="skills-section ObserverSection" id="Skills">
-            <h3>Skills<b>.</b></h3>
+            <h3 class="skills-title">Skills<b>.</b></h3>
             <article class="skills-container">
                 <section class="hard-skills">
                     <h4>Hard skills</h4>
@@ -179,13 +236,13 @@
             </article>
         </div>
     </main>
-    <footer>
+    <footer class="ObserverSection" id="Contact">
         <svg class="footer-top-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
             preserveAspectRatio="none">
             <path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
         </svg>
-        <div class="footer-container ObserverSection" id="Contact">
-            <h3>Contact me<b>.</b></h3>
+        <div class="footer-container">
+            <h3 class="contact-title">Contact me<b>.</b></h3>
             <div class="footer-content">
                 <div class="social-medias-container">
                     <div class="social-medias-svgs">
