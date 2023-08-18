@@ -734,5 +734,19 @@ body footer .footer-copy h4 {
     margin-bottom: 3em;
   }
 }
+@media screen and (max-width: 447px) {
+  body main .skills-section .skills-title {
+    font-size: calc(1rem + 4vw);
+    padding: 1em 0.5em;
+  }
+  body main .skills-section .skills-container .hard-skills .list-container ul,
+  body main .skills-section .skills-container .soft-skills .list-container ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

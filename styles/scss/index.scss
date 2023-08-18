@@ -726,3 +726,27 @@ body{
         }
     }
 }
+@media screen and (max-width: 447px) {
+    body{
+        main{
+            .skills-section{
+                .skills-title{
+                    font-size: calc(1rem + 4vw);
+                    padding: 1em 0.5em;
+                }
+                .skills-container{
+                    .hard-skills .list-container,
+                    .soft-skills .list-container{
+                        ul{
+                            justify-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
