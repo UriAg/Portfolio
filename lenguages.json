@@ -14,7 +14,7 @@
 
             "aboutSection": {
                 "title": "Sobre mí<b>.</b>",
-                "text": "Profesionalizando mis habilidades de desarrollo durante <b class='highlighted-word'>+3 años</b>. <b class='highlighted-word'>Autodidacta</b>, <b class='highlighted-word'>resiliente</b> y <b class='highlighted-word'>dinámico</b>. Disfruto del trabajo en equipo y brindo apoyo y orientación para lograr objetivos. <br>Apasionado por crear interfaces atractivas y funcionales. Comprometido con el aprendizaje continuo y actualmente expandiendo mis habilidades en desarrollo Backend. <b class='highlighted-word'>Liderazgo</b>, <b class='highlighted-word'>seriedad</b> y <b class='highlighted-word'>proactividad</b> para enfrentar nuevos desafíos. <br>¡Contáctame para conversar sobre tecnología y oportunidades profesionales!"
+                "text": "Profesionalizando mis habilidades de desarrollo durante <b class='highlighted-word'>+3 años</b>. <b class='highlighted-word'>Autodidacta</b>, <b class='highlighted-word'>resiliente</b> y <b class='highlighted-word'>dinámico</b>. Disfruto del trabajo en equipo, brindo apoyo y orientación para lograr objetivos. <br>Apasionado por crear interfaces atractivas y funcionales. Comprometido con el aprendizaje continuo y actualmente expandiendo mis habilidades en desarrollo Backend. <b class='highlighted-word'>Liderazgo</b>, <b class='highlighted-word'>seriedad</b> y <b class='highlighted-word'>proactividad</b> para enfrentar nuevos desafíos. <br>¡Contáctame para conversar sobre tecnología y oportunidades profesionales!"
             },
 
             "projectsSection": {
@@ -22,11 +22,11 @@
                 "projectsText": {
                     "DW": {
                         "title":"Plantilla de tienda online HTML",
-                        "text": "Desarrollé una comprensión sólida del preprocesador CSS <b class='highlighted-word'>'SASS'</b>, comprendiendo su funcionalidad y implementando de manera efectiva mixins, loops, importaciones, destructuring, definición de variables, importaciones, extensiones y operaciones aritméticas. <br>Además, empleé prácticas de JavaScript para observar la carga del DOM y el enfoque de elementos, facilitando la creación de acciones personalizadas basadas en la monitorización de estados."
+                        "text": "Desarrollé una comprensión sólida del preprocesador CSS <b class='highlighted-word'>'SASS'</b>, comprendiendo su funcionalidad e implementando de manera efectiva mixins, loops, importaciones, destructuring, definición de variables, importaciones, extensiones y operaciones aritméticas. <br>Además, empleé prácticas de JavaScript para observar la carga del DOM y el enfoque de elementos, facilitando la creación de acciones personalizadas basadas en la monitorización de estados."
                     },
                     "JS": {
                         "title": "Organizador de registros Javascript",
-                        "text": "Demostré habilidades en la validación de existencia y obtención de datos, validaciones de campos, junto con la manipulación del DOM, llamadas síncronas y asíncronas, y la utilización de bibliotecas de <b class='highlighted-word'>JavaScript</b> como 'Toastify' y 'SweetAlert' en este proyecto. <br>Gestioné la creación, modificación y eliminación de datos específicos en localStorage, rendericé información y seleccioné claves, utilizando sintaxis avanzada del lenguaje, como el operador spread, los literal templates, el operador ternario y el operador lógico AND, para mejorar la legibilidad y simplificar el código. <br>Logré una estilización mínima de acuerdo con las pautas del proyecto."
+                        "text": "Demostré habilidades en la validación de existencia y obtención de datos, validaciones de campos, junto con la manipulación del DOM, llamadas síncronas y asíncronas, y la utilización de bibliotecas de <b class='highlighted-word'>JavaScript</b> como 'Toastify' y 'SweetAlert' en este proyecto. <br>Gestioné la creación, modificación y eliminación de datos específicos en localStorage, rendericé información y seleccioné claves, utilizando sintaxis avanzada del lenguaje, como el operador spread, literal templates, operador ternario y operador lógico AND, para mejorar la legibilidad y simplificar el código. <br>Logré una estilización mínima de acuerdo con las pautas del proyecto."
                     },
                     "RJS": {
                         "title": "Tienda online ReactJS",
