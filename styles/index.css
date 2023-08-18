@@ -7,6 +7,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background: #f5f6ff;
+  --svg-color: #1b1b1b;
+  --highlighted-word: #1b1b1b;
+  --highlighted-card-word: #1b1b1b;
+  --card-border: "1px solid #1b1b1b";
+  --card-background: "#ebebeb";
+  --frontend-title: #303041;
+  --font-color: #ebebeb;
+  --font-color-dark: #1b1b1b;
+  --border-card: #1b1b1b;
+}
+
 @keyframes show {
   from {
     opacity: 0;
@@ -17,18 +30,28 @@
     scale: 100%;
   }
 }
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  transition: background 0.2s ease;
+  background-color: var(--background);
+}
 body .menu {
   width: 100%;
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 99;
   backdrop-filter: blur(5px);
-  background-color: rgba(235, 235, 235, 0.1);
+  background-color: rgba(var(--background), 0.1);
 }
 body .menu .menu-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 2em;
   padding: 1em 0;
 }
@@ -39,9 +62,10 @@ body .menu .menu-list li a {
   border-radius: 0 0 2px 2px;
   padding: 0 0.2em;
   text-decoration: none;
-  color: #1b1b1b;
+  color: var(--font-color-dark);
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
+  transition: color 0.2s ease;
 }
 body .menu .menu-list .active {
   border-bottom: 2px solid #a514c9 !important;
@@ -62,21 +86,36 @@ body .menu .menu-list li:nth-child(5) {
   list-style: disc;
   color: #89399d;
 }
-body .menu .lenguage-changer .check {
+body .menu .lenguage-changer {
+  position: absolute;
+  right: 36px;
+  bottom: -55px;
+  backdrop-filter: blur(5px);
+  font-family: "League Spartan", sans-serif;
+}
+body .menu .lenguage-changer .lenguage-changer-container {
+  text-align: center;
+}
+body .menu .lenguage-changer .lenguage-changer-container span {
+  font-weight: bolder;
+  color: var(--font-color-dark);
+  transition: color 0.2s ease;
+}
+body .menu .lenguage-changer .lenguage-changer-container .check {
   position: relative;
   width: 2em;
 }
-body .menu .lenguage-changer .check::before {
+body .menu .lenguage-changer .lenguage-changer-container .check::before {
   content: "";
   cursor: pointer;
   position: absolute;
   width: 2em;
   height: 1em;
-  background-color: #333;
+  background-color: #a514c9;
   border-radius: 25px;
   transition: all 0.2s ease;
 }
-body .menu .lenguage-changer .check::after {
+body .menu .lenguage-changer .lenguage-changer-container .check::after {
   content: "";
   cursor: pointer;
   position: absolute;
@@ -85,16 +124,26 @@ body .menu .lenguage-changer .check::after {
   background-color: #fff;
   border-radius: 25px;
   transition: all 0.2s ease;
-  border: 2px solid #333;
+  border: 1px solid #333;
   box-sizing: border-box;
 }
-body .menu .lenguage-changer .check:checked::before {
-  background-color: #333;
+body .menu .lenguage-changer .lenguage-changer-container .check:checked::before {
+  background-color: #a514c9;
 }
-body .menu .lenguage-changer .check:checked::after {
+body .menu .lenguage-changer .lenguage-changer-container .check:checked::after {
   content: "";
   transform: translateX(1em);
-  border: 2px solid #333;
+  border: 1px solid #333;
+}
+body .menu .night-mode-container {
+  position: absolute;
+  right: 54px;
+  bottom: -103px;
+}
+body .menu .night-mode-container svg {
+  color: var(--svg-color);
+  height: 2em;
+  width: 2em;
 }
 body .banner {
   width: 100%;
@@ -110,15 +159,18 @@ body .banner .name-position-container {
   margin-bottom: 1.5em;
 }
 body .banner .name-position-container h1 {
+  color: var(--font-color-dark);
+  transition: color 0.2s ease;
   font-size: 5vw;
   font-weight: 100;
   margin: 0;
 }
-body .banner .name-position-container h2 {
+body .banner .name-position-container h1 b {
   font-size: 6vw;
   margin: 0;
   font-family: "Kufam", sans-serif;
-  color: #414162;
+  color: var(--frontend-title);
+  transition: color 0.2s ease;
 }
 body .banner .social-medias-container {
   text-align: center;
@@ -132,7 +184,8 @@ body .banner .social-medias-container .social-medias-svgs svg {
   width: 2.5em;
   height: 2.5em;
   cursor: pointer;
-  transition: fill 0.3s ease;
+  fill: var(--svg-color);
+  transition: fill 0.2s ease;
 }
 body .banner .social-medias-container .social-medias-svgs svg:hover {
   fill: #1c2bff;
@@ -148,7 +201,7 @@ body .banner .social-medias-container .cv-downloader a {
   font-family: "Kufam", sans-serif;
   border-radius: 5px;
   background-color: #1c2bff;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 body .banner .social-medias-container .cv-downloader a:after {
   content: "⭳";
@@ -167,7 +220,8 @@ body main .svg-top-separator svg {
 }
 body main .main-content {
   background-color: #2e66e2;
-  color: #ebebeb;
+  color: var(--font-color);
+  transition: color 0.2s ease;
 }
 body main .main-content .about-container .about-info {
   padding: 5em 0;
@@ -191,8 +245,10 @@ body main .main-content .about-container .about-info .about-text-container p {
   width: 70%;
   font-size: 1.5rem;
 }
-body main .main-content .about-container .about-info .about-text-container p b {
-  color: #192046;
+body main .main-content .about-container .about-info .about-text-container p .highlighted-word {
+  color: var(--highlighted-word);
+  transition: color 0.2s ease;
+  font-weight: 100;
 }
 body main .svg-bottom-separator {
   fill: #2e66e2;
@@ -206,11 +262,12 @@ body main .projects-section {
   padding: 0.5em 0;
 }
 body main .projects-section h3 {
-  color: #1b1b1b;
+  color: var(--font-color-dark);
   font-family: "Kufam", sans-serif;
   text-align: center;
   font-size: 3em;
   padding-bottom: 1.5em;
+  transition: color 0.2s ease;
 }
 body main .projects-section h3 b {
   color: #89399d;
@@ -230,6 +287,10 @@ body main .projects-section .projects-section-bottom a .col {
 }
 body main .projects-section .projects-section-top a .col .card,
 body main .projects-section .projects-section-bottom a .col .card {
+  background: var(--card-background);
+  border: var(--card-border);
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.1rem;
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
@@ -262,6 +323,20 @@ body main .projects-section .projects-section-bottom a .col .card::before {
   height: 100%;
   transition: all 0.2s ease;
 }
+body main .projects-section .projects-section-top a .col .card .card-body .card-title,
+body main .projects-section .projects-section-bottom a .col .card .card-body .card-title {
+  color: var(--highlighted-card-word);
+  transition: color 0.2s ease;
+}
+body main .projects-section .projects-section-top a .col .card .card-body p,
+body main .projects-section .projects-section-bottom a .col .card .card-body p {
+  color: var(--font-color-dark);
+}
+body main .projects-section .projects-section-top a .col .card .card-body p .highlighted-word,
+body main .projects-section .projects-section-bottom a .col .card .card-body p .highlighted-word {
+  color: var(--highlighted-card-word);
+  transition: color 0.2s ease;
+}
 body main .skills-section {
   width: 100%;
   display: flex;
@@ -271,13 +346,13 @@ body main .skills-section {
   padding: 0.5em 0 1em 0;
 }
 body main .skills-section h3 {
-  color: #1b1b1b;
+  color: var(--font-color-dark);
   font-family: "Kufam", sans-serif;
   text-align: center;
-  width: 50%;
   border-top: 1px solid #2e66e2;
   font-size: 3em;
-  padding: 1em 0 1.5em 0;
+  padding: 1em 1.5em;
+  transition: color 0.2s ease;
 }
 body main .skills-section h3 b {
   color: #89399d;
@@ -286,7 +361,6 @@ body main .skills-section .skills-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 body main .skills-section .skills-container .soft-skills {
   width: 47%;
@@ -300,7 +374,9 @@ body main .skills-section .skills-container .soft-skills h4 {
   font-size: 2em;
   padding-bottom: 0.5em;
   font-style: italic;
+  color: var(--font-color-dark);
   font-family: "Kufam", sans-serif;
+  transition: color 0.2s ease;
 }
 body main .skills-section .skills-container .hard-skills .list-container,
 body main .skills-section .skills-container .soft-skills .list-container {
@@ -310,8 +386,10 @@ body main .skills-section .skills-container .soft-skills .list-container {
 }
 body main .skills-section .skills-container .hard-skills .list-container ul li,
 body main .skills-section .skills-container .soft-skills .list-container ul li {
+  color: var(--font-color-dark);
   font-family: "League Spartan", sans-serif;
   font-size: 1.5em;
+  transition: color 0.2s ease;
 }
 body footer .footer-top-separator {
   fill: #2e66e2;
@@ -355,7 +433,7 @@ body footer .footer-container .footer-content .social-medias-container .social-m
   height: 2.5em;
   cursor: pointer;
   fill: #ebebeb;
-  transition: fill 0.3s ease;
+  transition: fill 0.2s ease;
 }
 body footer .footer-container .footer-content .social-medias-container .social-medias-svgs svg:hover {
   fill: rgba(215, 205, 219, 0.5294117647);
@@ -371,7 +449,7 @@ body footer .footer-container .footer-content .social-medias-container .cv-downl
   font-family: "Kufam", sans-serif;
   border-radius: 5px;
   background-color: #1c2bff;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 body footer .footer-container .footer-content .social-medias-container .cv-downloader a:after {
   content: "⭳";
@@ -419,7 +497,7 @@ body footer .footer-container .footer-content .form-container form textarea {
   font-family: "League Spartan", sans-serif;
   color: #ebebeb;
   font-size: 1.2em;
-  transition: all 0.3s ease;
+  transition: background 0.2s ease;
 }
 body footer .footer-container .footer-content .form-container form input:focus,
 body footer .footer-container .footer-content .form-container form textarea:focus {
@@ -434,7 +512,7 @@ body footer .footer-container .footer-content .form-container form button {
   font-family: "Kufam", sans-serif;
   border-radius: 5px;
   background-color: #1c2bff;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 body footer .footer-container .footer-content .form-container form button:after {
   content: "⭳";
@@ -460,14 +538,22 @@ body footer .footer-copy h4 {
 
 @media screen and (max-width: 768px) {
   body .menu {
-    width: 35%;
     height: 100vh;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     left: -1000px;
-    background-color: rgba(0, 0, 0, 0.23);
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.68);
+    transition: transform 0.2s ease;
+  }
+  body .menu .close-menu {
+    position: absolute;
+    bottom: 20px;
+    height: 2em;
+    width: 2em;
+    color: #fff;
   }
   body .menu .menu-list {
     flex-direction: column;
@@ -491,23 +577,41 @@ body footer .footer-copy h4 {
   body .menu .menu-list li:nth-child(5) {
     list-style: none;
   }
+  body .menu-active {
+    transform: translateX(1000px);
+  }
   body .menu-small {
     position: fixed;
     bottom: 0;
     right: 0;
+    left: 0;
     z-index: 99;
-    background-color: #b2b5c7;
+    padding: 1em 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(var(--background), 0.1);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    transition: background 0.2s ease;
   }
-  body .menu-small svg {
+  body .menu-small div {
+    width: 33.3333333333%;
+  }
+  body .menu-small div svg {
     width: 3em;
     height: 3em;
+    fill: var(--font-color-dark);
+    transition: fill 0.2s ease;
   }
-  body .menu-small svg:first-of-type {
+  body .menu-small div svg:first-of-type, body .menu-small div svg:nth-of-type(2) {
     width: 2em;
     height: 2em;
+  }
+  body .menu-small .lenguage-changer span {
+    font-weight: bolder;
+    color: var(--font-color-dark);
+    transition: color 0.2s ease;
   }
   body .menu-small .lenguage-changer .check {
     position: relative;
@@ -515,37 +619,42 @@ body footer .footer-copy h4 {
   }
   body .menu-small .lenguage-changer .check::before {
     content: "";
+    cursor: pointer;
     position: absolute;
     width: 2em;
     height: 1em;
-    background-color: #333;
+    background-color: #a514c9;
     border-radius: 25px;
     transition: all 0.2s ease;
   }
   body .menu-small .lenguage-changer .check::after {
     content: "";
+    cursor: pointer;
     position: absolute;
     width: 1em;
     height: 1em;
     background-color: #fff;
     border-radius: 25px;
     transition: all 0.2s ease;
-    border: 2px solid #333;
+    border: 1px solid #333;
     box-sizing: border-box;
   }
   body .menu-small .lenguage-changer .check:checked::before {
-    background-color: #00a1ff;
+    background-color: #a514c9;
   }
   body .menu-small .lenguage-changer .check:checked::after {
     content: "";
     transform: translateX(1em);
-    border: 2px solid #00a1ff;
+    border: 1px solid #333;
+  }
+  body .banner {
+    margin-top: -1em;
   }
   body .banner .name-position-container h1 {
     font-size: 9vw;
   }
-  body .banner .name-position-container h2 {
-    font-size: 17vw;
+  body .banner .name-position-container h1 b {
+    font-size: calc(2rem + 2vw);
   }
   body main .projects-section .projects-section-top,
   body main .projects-section .projects-section-bottom {
@@ -563,6 +672,10 @@ body footer .footer-copy h4 {
   body main .main-content .about-container .about-info .about-text-container p {
     width: 90%;
   }
+  body main .skills-section .skills-title {
+    font-size: calc(1rem + 4vw);
+    padding: 1em 0.5em;
+  }
   body main .skills-section .skills-container {
     flex-direction: column;
     justify-content: center;
@@ -571,9 +684,24 @@ body footer .footer-copy h4 {
   body main .skills-section .skills-container .soft-skills {
     width: 100%;
   }
+  body main .skills-section .skills-container .hard-skills h4,
+  body main .skills-section .skills-container .soft-skills h4 {
+    font-size: calc(0.6rem + 3vw);
+  }
   body main .skills-section .skills-container .hard-skills .list-container,
   body main .skills-section .skills-container .soft-skills .list-container {
     justify-content: space-around;
+  }
+  body main .skills-section .skills-container .hard-skills .list-container ul,
+  body main .skills-section .skills-container .soft-skills .list-container ul {
+    width: 14em;
+  }
+  body main .skills-section .skills-container .hard-skills .list-container ul li,
+  body main .skills-section .skills-container .soft-skills .list-container ul li {
+    font-size: 1.1em;
+  }
+  body footer .contact-title {
+    font-size: calc(1.6rem + 0.6vw) !important;
   }
   body footer .footer-top-separator {
     fill: #2e66e2;

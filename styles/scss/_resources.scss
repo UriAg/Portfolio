@@ -8,13 +8,18 @@
     box-sizing: border-box;
 }
 
-// Light mode
-$--background-light: #ebebeb;
-$--font-color-light: #1b1b1b;
-
-// Dark mode
-$--background-dark: #1b1b1b;
-$--font-color-dark: #ebebeb;
+:root{
+    --background: #f5f6ff;
+    --svg-color: #1b1b1b;
+    --highlighted-word: #1b1b1b;
+    --highlighted-card-word: #1b1b1b;
+    --card-border: "1px solid #1b1b1b";
+    --card-background: "#ebebeb";
+    --frontend-title: #303041;
+    --font-color: #ebebeb;
+    --font-color-dark: #1b1b1b;
+    --border-card: #1b1b1b;
+}
 
 // Font family
 $--font-family-spartan : 'League Spartan', sans-serif;

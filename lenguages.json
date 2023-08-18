@@ -1,0 +1,128 @@
+[
+    {
+        "spanish": {
+            "navLinks": ["Inicio","Sobre mí","Proyectos","Habilidades","Contactame"],
+            "changeLenguage": "Cambiar a inglés",
+
+            "brandSection":{
+                "title": "Hola, soy Uriel Agüero <br><b>Desarrollador frontend</b>",
+                "button":{
+                    "text": "Descargar CV",
+                    "resumePath": "./CV/mi-cv.pdf"
+                }
+            },
+
+            "aboutSection": {
+                "title": "Sobre mí<b>.</b>",
+                "text": "Profesionalizando mis habilidades de desarrollo durante <b class='highlighted-word'>+3 años</b>. <b class='highlighted-word'>Autodidacta</b>, <b class='highlighted-word'>resiliente</b> y <b class='highlighted-word'>dinámico</b>. Disfruto del trabajo en equipo y brindo apoyo y orientación para lograr objetivos. <br>Apasionado por crear interfaces atractivas y funcionales. Comprometido con el aprendizaje continuo y actualmente expandiendo mis habilidades en desarrollo Backend. <b class='highlighted-word'>Liderazgo</b>, <b class='highlighted-word'>seriedad</b> y <b class='highlighted-word'>proactividad</b> para enfrentar nuevos desafíos. <br>¡Contáctame para conversar sobre tecnología y oportunidades profesionales!"
+            },
+
+            "projectsSection": {
+                "title": "Proyectos<b>.</b>",
+                "projectsText": {
+                    "DW": {
+                        "title":"Plantilla de tienda online HTML",
+                        "text": "Desarrollé una comprensión sólida del preprocesador CSS <b class='highlighted-word'>'SASS'</b>, comprendiendo su funcionalidad y implementando de manera efectiva mixins, loops, importaciones, destructuring, definición de variables, importaciones, extensiones y operaciones aritméticas. <br>Además, empleé prácticas de JavaScript para observar la carga del DOM y el enfoque de elementos, facilitando la creación de acciones personalizadas basadas en la monitorización de estados."
+                    },
+                    "JS": {
+                        "title": "Organizador de registros Javascript",
+                        "text": "Demostré habilidades en la validación de existencia y obtención de datos, validaciones de campos, junto con la manipulación del DOM, llamadas síncronas y asíncronas, y la utilización de bibliotecas de <b class='highlighted-word'>JavaScript</b> como 'Toastify' y 'SweetAlert' en este proyecto. <br>Gestioné la creación, modificación y eliminación de datos específicos en localStorage, rendericé información y seleccioné claves, utilizando sintaxis avanzada del lenguaje, como el operador spread, los literal templates, el operador ternario y el operador lógico AND, para mejorar la legibilidad y simplificar el código. <br>Logré una estilización mínima de acuerdo con las pautas del proyecto."
+                    },
+                    "RJS": {
+                        "title": "Tienda online ReactJS",
+                        "text": "El proyecto demuestra mi capacidad para integrar datos almacenados en <b class='highlighted-word'>Firestore</b> de manera eficiente y crear un código <b class='highlighted-word'>ReactJS</b> limpio, óptimo y reutilizable. <br>He desarrollado funcionalidades para almacenar registros de compras y realizar validaciones esenciales. <br>Mis habilidades en el uso de hooks personalizados y predefinidos, enrutamientos, gestión de datos globales y actualización en tiempo real son destacables y reflejan mi compromiso con la excelencia en el desarrollo frontend."
+                    },
+                    "PHP": {
+                        "title": "Tienda online PHP",
+                        "text": "En este proyecto personal, me sumergí en un estudio exhaustivo y práctico de <b class='highlighted-word'>PHP</b>, <b class='highlighted-word'>Apache</b>, <b class='highlighted-word'>MySQL</b> y <b class='highlighted-word'>Mercury</b> (XAMPP). <br>Diseñé integraciones con <b class='highlighted-word'>MercadoPago</b>, aproveché eficazmente las bases de datos <b class='highlighted-word'>SQL</b>, desarrollé la funcionalidad de envío de correos electrónicos, implementé la creación y eliminación de cuentas de usuarios, y diseñé la capacidad de agregar productos a la base de datos, todo ello validado minuciosamente. <br>Al mismo tiempo, me sumergí en el funcionamiento del preprocesador de CSS '<b class='highlighted-word'>Less</b>', comprendiendo sus funcionalidades y metodologías de declaración."
+                    }
+                }
+            },
+            
+            "skillsSection": {
+                "title": "Habilidades<b>.</b>",
+                "skills": {
+                    "hardSkills": {
+                        "title": "Habilidades duras"
+                    },
+                    "softSkills": {
+                        "title": "Habilidades blandas",
+                        "softSkillsItems": ["Proactividad", "Liderazgo", "Empatía", "Trabajo en equipo", "Rápido aprendizaje", "Adaptabilidad", "Gestión del tiempo", "Resolución de problemas"]
+                    }
+                }
+            },
+            
+            "contactSection": {
+                "title": "Contactame<b>.</b>",
+                "form":{
+                    "nameLabel": "Tu nombre:",
+                    "emailLabel": "Tu email:",
+                    "messageLabel": "Tu mensaje:",
+                    "sendFormButton": "Enviar"
+                }
+            }
+        },
+        "english": {
+            "navLinks": ["Home","About me","Projects","Skills","Contact"],
+            "changeLenguage": "Change to spanish",
+
+            "brandSection":{
+                "title": "Hi, i'm Uriel Agüero <br><b>Frontend Developer</b>",
+                "button":{
+                    "text": "Download resume",
+                    "resumePath": "./CV/my-resume.pdf"
+                }
+            },
+
+            "aboutSection": {
+                "title": "About me<b>.</b>",
+                "text": "Professionalizing my development skills for <b class='highlighted-word'>+3 years</b>. <b class='highlighted-word'>Self-taught</b>, <b class='highlighted-word'>resilient</b>, and <b class='highlighted-word'>dynamic</b>. I enjoy teamwork and providing both support and guidance to achieve goals. <br> Passionate about creating appealing and functional interfaces. Committed to continuous learning and currently expanding my skills in Backend development. <b class='highlighted-word'>Leadership</b>, <b class='highlighted-word'>seriousness</b>, and <b class='highlighted-word'>proactivity</b> to tackle new challenges. Contact me to chat about technology and professional opportunities!"
+            },
+
+            "projectsSection": {
+                "title": "Projects<b>.</b>",
+                "projectsText": {
+                    "DW": {
+                        "title":"HTML E-commerce template",
+                        "text": "I have gained a solid understanding of the '<b class='highlighted-word'>SASS</b>' CSS preprocessor, comprehending its operation and implementing mixins, loops, imports, destructuring, variable definition, import and extend directives, as well as arithmetic operations. <br>Furthermore, I have utilized <b class='highlighted-word'>JavaScript</b> practices to observe DOM loading and element focus, resulting in customized actions based on state monitoring."
+                    },
+                    "JS": {
+                        "title": "JS Records organizer",
+                        "text": "Demonstrated proficiency in data fetching, data existence validation, and field validations, along with DOM manipulation, synchronous and asynchronous calls, and utilization of <b class='highlighted-word'>JavaScript</b> libraries like 'Toastify' and 'SweetAlert' in this project. <br>Managed creation, modification, and deletion of specific localStorage data, rendered information, and selected keys, employing advanced language syntax such as the spread operator, ternary operator,template literals, and logical AND operator to enhance readability and streamline code. <br>Achieved minimal styling as per project guidelines."
+                    },
+                    "RJS": {
+                        "title": "ReactJS e-commerce",
+                        "text": "The project demonstrates my ability to efficiently integrate data stored in <b class='highlighted-word'>Firestore</b> and create clean, optimal, and reusable <b class='highlighted-word'>ReactJS</b> code. <br> I have developed functionalities to store purchase records and perform essential validations. <br> My skills in using custom and predefined hooks, routing, managing global data, and real-time updates are notable and reflect my commitment to excellence in frontend development."
+                    },
+                    "PHP": {
+                        "title": "PHP e-commerce",
+                        "text": "Demonstrated a comprehensive understanding of <b class='highlighted-word'>PHP</b>, <b class='highlighted-word'>Apache</b>, <b class='highlighted-word'>MySQL</b>, and <b class='highlighted-word'>Mercury</b> (XAMPP) in a personal project. <br>Successfully orchestrated integrations with <b class='highlighted-word'>MercadoPago</b> and skillfully utilized <b class='highlighted-word'>SQL</b> databases. <br>Implemented email sending functionality, managed user account creation and deletion, and introduced the capacity to add products to the database, all accompanied by meticulous field validations. <br>Additionally, gained a profound understanding of the '<b class='highlighted-word'>Less</b>' CSS preprocessor, encompassing its functionalities and declaration methods."
+                    }
+                }
+            },
+            
+            "skillsSection": {
+                "title": "Skills<b>.</b>",
+                "skills": {
+                    "hardSkills": {
+                        "title": "Hard skills"
+                    },
+                    "softSkills": {
+                        "title": "Soft skills",
+                        "softSkillsItems": ["Proactivity", "Leadership", "Empathy", "Teamwork", "Fast learning", "Adaptability", "Time managment", "Problem solving"]
+                    }
+                }
+            },
+            
+            "contactSection": {
+                "title": "Contact me<b>.</b>",
+                "form":{
+                    "nameLabel": "Your name:",
+                    "emailLabel": "Your email:",
+                    "messageLabel": "Your message:",
+                    "sendFormButton": "Send"
+                }
+            }
+        }
+    }
+]
