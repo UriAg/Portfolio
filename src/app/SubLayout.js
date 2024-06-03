@@ -21,8 +21,8 @@ const SubLayout = ({ children }) => {
           open && "overflow-hidden"
         } relative cursor-none overflow-x-hidden`}
         onPointerMove={(e) => handleChangePointerPosition(e)}
-        onPointerEnter={handleEnablePointer(true)}
-        onPointerLeave={handleEnablePointer(false)}
+        onPointerEnter={()=>handleEnablePointer(true)}
+        onPointerLeave={()=>handleEnablePointer(false)}
       >
         <span
           className={`absolute w-4 h-4 ${
