@@ -5,7 +5,7 @@ import { useCustomContext } from '@/app/context/utilsContext';
 import Logo from '@/app/components/Logo';
 import Image from 'next/image';
 
-function page() {
+const Details = () => {
   const { handleChangePointerColor } = useCustomContext();
   
   const searchParams = useSearchParams();
@@ -100,4 +100,4 @@ function page() {
   )
 }
 
-export default page
+export default Details

@@ -1,8 +1,10 @@
 import experienceJson from '../../../public/experience.json'
 import WorkDesk from '../components/WorkDesk'
 
-export default function experience() {
+const Experience = () => {
   return (
     <WorkDesk workJson={experienceJson.work}/>
   )
 }
+
+export default Experience

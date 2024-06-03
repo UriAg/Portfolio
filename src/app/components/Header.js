@@ -3,7 +3,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useCustomContext } from "../context/utilsContext"
 
-function Header() {
+const Header = () => {
   const { handleChangePointerColor } = useCustomContext();
   const pathname = usePathname();
 

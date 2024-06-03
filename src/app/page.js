@@ -1,6 +1,6 @@
 import Logo from './components/Logo.js';
 
-export default function Home() {
+const Home = () => {
 
   return (
     <section className="w-3/4 z-10">
@@ -35,3 +35,5 @@ export default function Home() {
     </section>
   );
 }
+
+export default Home

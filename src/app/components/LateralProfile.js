@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { useCustomContext } from "../context/utilsContext"
 
-export default function LateralProfile() {
+const LateralProfile = () => {
     const {handleChangePointerColor} = useCustomContext();
     const [successCopy, setSuccessCopy] = useState()
 
@@ -77,3 +77,4 @@ export default function LateralProfile() {
   )
 }
 
+export default LateralProfile

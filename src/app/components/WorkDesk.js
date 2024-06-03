@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 import ProjectCard from '../components/ProjectCard.js'
 import { useCustomContext } from '../context/utilsContext.js'
 
-export default function WorkDesk({ workJson }) {
+const WorkDesk = ({ workJson }) => {
   const { handleChangePointerColor } = useCustomContext();
   const [projectsList, setProjectList] = useState(Object.values(workJson));
   const [projectsOrder, setProjectsOrder] = useState('newest');
@@ -45,3 +45,5 @@ export default function WorkDesk({ workJson }) {
     </section>
   )
 }
+
+export default WorkDesk

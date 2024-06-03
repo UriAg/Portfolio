@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useCustomContext } from '../context/utilsContext'
 import Logo from './Logo.js';
 
-export default function ProjectCard({title, id, dateStart, dateEnd, description, icon}) {
+const ProjectCard = ({title, id, dateStart, dateEnd, description, icon}) => {
   const {handleChangePointerColor} = useCustomContext();
 
   return (
@@ -29,3 +29,4 @@ export default function ProjectCard({title, id, dateStart, dateEnd, description,
   )
 }
 
+export default ProjectCard

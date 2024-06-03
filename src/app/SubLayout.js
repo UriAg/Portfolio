@@ -5,7 +5,7 @@ import { useCustomContext } from "./context/utilsContext"
 const inter = Inter({ subsets: ["latin"] });
 
 
-function SubLayout({ children }) {
+const SubLayout = ({ children }) => {
     const { pointerHover, open, cursorPosition, handleChangePointerPosition, title } = useCustomContext()
 
     return (

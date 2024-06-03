@@ -1,11 +1,9 @@
-import React from 'react'
 import projectsJson from '../../../public/experience.json'
 import WorkDesk from '../components/WorkDesk.js'
 
-function page() {
+const Information = () => {
   return (
     <WorkDesk workJson={projectsJson.projects}/>
   )
 }
-
-export default page
+export default Information
