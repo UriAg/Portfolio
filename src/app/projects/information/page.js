@@ -4,6 +4,7 @@ import experience from '../../../../public/experience.json'
 import { useCustomContext } from '@/app/context/utilsContext';
 import Logo from '@/app/components/Logo';
 import Image from 'next/image';
+import { Suspense } from 'react';
 
 const Details = () => {
   const { handleChangePointerColor } = useCustomContext();
@@ -18,7 +19,8 @@ const Details = () => {
   const selectedItem = Object.values(jsonJoin).filter(e => e.id === id);
   
   return (
-    <div className='w-full z-10'>
+    <Suspense fallback={<div>Cargando...</div>}>
+      <div className='w-full z-10'>
       <div className='flex justify-between items-center pb-4 border-b border-gray-400/25'>
         <div>
           <h1 className='text-2xl'>{selectedItem[0].title}</h1>
@@ -35,8 +37,6 @@ const Details = () => {
               selectedItem[0].main_image ?
               (<Image
                 src={`/images/${selectedItem[0].id}/${selectedItem[0].main_image}`}
-                blurDataURL={`/images/${selectedItem[0].id}/${selectedItem[0].main_image}`}
-                placeholder='blur'
                 width={500}
                 height={500}
                 priority={true}
@@ -97,6 +97,7 @@ const Details = () => {
         </section>
       </article>
     </div>
+    </Suspense>
   )
 }
 
