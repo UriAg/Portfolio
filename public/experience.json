@@ -1,0 +1,78 @@
+{
+    "work":{
+        "natural":{
+            "title":"Natural Icy Market",
+            "id":"natural",
+            "description":"- Lideré el desarrollo de una tienda online para un almacén natural, desarrollando el backend y supervisando la calidad del código <b style='color:rgb(59 130 246)'>frontend</b> con <b style='color:rgb(59 130 246)'>ReactJs</b> y <b style='color:rgb(59 130 246)'>MUI</b>.<br>- Tomé el rol de <b style='color:rgb(59 130 246)'>Team lead</b>, dirigiendo eficazmente un equipo multidisciplinario compuesto por diseñadores, desarrolladores, community managers y product managers.<br>- Desarrollé y optimicé el <b style='color:rgb(59 130 246)'>backend</b>, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b>.<br>- Resultado: Logramos un sitio web visualmente atractivo, contextualmente relevante para el comercio y altamente funcional.",
+            "icon":["icon-[logos--react]", "icon-[logos--git-icon]", "icon-[logos--material-ui]", "icon-[logos--nodejs-icon]", "icon-[logos--express] invert", "icon-[logos--mongodb-icon]"],
+            "date_start":"10/12/2023",
+            "date_end":"12/02/2024",
+            "github_link":"",
+            "link":"https://natural-icy-market.vercel.app/",
+            "main_image":"natural-1.png",
+            "images":["natural-2.png", "natural-3.png", "natural-4.png", "natural-5.png", "natural-6.png", "natural-7.png", "natural-8.png", "natural-9.png", "natural-10.png", "natural-11.png"]
+        }
+    },
+    "projects":{
+        "flart":{
+            "title":"Flart",
+            "id":"flart",
+            "description":"Plantilla desktop para ecommerce básico, sitio planteado alta y fácilmente personalizable. Entrega final de la carrera frontend de Coderhouse, etapa ReactJS. Se demuestran altos conocimientos en creacion, manejo de registros en Firestore y limpieza estructural en conjunto de buena arquitectura de hooks vanilla/personalizados, enrutamientos y validaciones",
+            "icon":["icon-[logos--react]", "icon-[logos--git-icon]", "icon-[logos--css-3]", "icon-[logos--firebase]"],
+            "date_start":"14/06/2023",
+            "date_end":"09/10/2023",
+            "github_link":"https://github.com/UriAg/EntregaFinal_ReactJS_Aguero",
+            "link":"https://entrega-final-react-js-aguero.vercel.app/",
+            "main_image":"flart-1.png",
+            "images":["flart-2.png", "flart-3.png", "flart-4.png"]
+        },
+        "expense":{
+            "title":"Anotador de gastos",
+            "id":"expense",
+            "description":"Aplicación web para moviles creada por y para estudiantes, su objetivo es mantener un registro de sus gastos para asegurar un estratégico manejo de su economía. Desarrollado para celulares",
+            "icon":["icon-[logos--material-ui]", "icon-[logos--react]", "icon-[logos--git-icon]", "icon-[logos--sass]"],
+            "date_start":"09/04/2024",
+            "date_end":"05/05/2024",
+            "github_link":"https://github.com/UriAg/Expense-recorder",
+            "link":"https://expense-recorder-pi.vercel.app/",
+            "main_image":"expense-1.png",
+            "images":["expense-2.png", "expense-3.png", "expense-4.png"]
+        },
+        "archiver":{
+            "title":"Archivero",
+            "id":"archiver",
+            "description":"Archivero para la creación y búsqueda de registros de cualquier tipo. Entrega final de la carrera frontend de Coderhouse, etapa JavaScript. Se implementó el uso de librerías como Toastify y SweetAlert, manejo del DOM, validación de campos, llamadas síncronas/asíncronas, existencia y manipulación de datos e interactividad mediante JS vanilla",
+            "icon":["icon-[logos--css-3]", "icon-[logos--git-icon]", "icon-[logos--html-5]", "icon-[logos--javascript]"],
+            "date_start":"04/05/2023",
+            "date_end":"26/06/2023",
+            "github_link":"https://github.com/UriAg/PreEntrega3_JS_Aguero",
+            "link":"https://uriag.github.io/PreEntrega3_JS_Aguero/",
+            "main_image":"archiver-1.png",
+            "images":["archiver-2.png", "archiver-3.png", "archiver-4.png", "archiver-5.png", "archiver-6.png"]
+        },
+        "wire":{
+            "title":"Sección minima admisible",
+            "id":"wire",
+            "description":"Aplicación destinada al dimensionamiento de la sección del cableado eléctrico de una instalación, su público objetivo son electricistas que requieran una forma amigable de optimizar este tedioso proceso de cálculo repetitivo",
+            "icon":["icon-[logos--css-3]", "icon-[logos--react]"],
+            "date_start":"14/11/2022",
+            "date_end":"22/12/2022",
+            "github_link":"https://github.com/UriAg/wire-section-calculator",
+            "link":"https://wire-section-calculator.vercel.app/",
+            "main_image":"wire-1.png",
+            "images":["wire-2.png", "wire-3.png"]
+        },
+        "funfact":{
+            "title":"Fun fact",
+            "id":"funfact",
+            "description":"Este fue mi primer intento de 'portfolio' en 2020",
+            "icon":["icon-[logos--css-3]", "icon-[logos--html-5]"],
+            "date_start":"18/03/2020",
+            "date_end":"21/03/2020",
+            "github_link":"https://github.com/UriAg/Fun-fact",
+            "link":"https://fun-fact-inky.vercel.app/",
+            "main_image":"funfact-1.png",
+            "images":[]
+        }
+    }
+}
