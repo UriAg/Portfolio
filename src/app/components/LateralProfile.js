@@ -24,7 +24,10 @@ const LateralProfile = () => {
         height={300}
         priority={true}
         alt="Foto de perfil"
-        className="rounded-full border-2 border-slate-800 !z-50"
+        className="rounded-full border-2 border-slate-800 transition-opacity opacity-0 !z-50"
+        onLoadingComplete={(image) =>
+          image.classList.remove("opacity-0")
+        }
       />
       <article className="pt-5">
         <h2 className="text-2xl font-bold">Uriel Agüero</h2>
