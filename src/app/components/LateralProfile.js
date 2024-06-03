@@ -17,23 +17,27 @@ const LateralProfile = () => {
   };
 
   return (
-    <section className="w-1/4 z-10">
-      <Image
-        src="/personal-image.jpg"
-        width={300}
-        height={300}
-        priority={true}
-        alt="Foto de perfil"
-        className="rounded-full border-2 border-slate-800 transition-opacity opacity-0 !z-50"
-        onLoadingComplete={(image) =>
-          image.classList.remove("opacity-0")
-        }
-      />
-      <article className="pt-5">
-        <h2 className="text-2xl font-bold">Uriel Agüero</h2>
-        <h2 className="text-xl font-light text-gray-500">
-          UriAg &middot; he/him
-        </h2>
+    <section className="w-full pb-8 lg:w-1/4 z-10">
+      <div className="flex items-center lg:items-start lg:flex-col">
+        <Image
+          src="/personal-image.jpg"
+          width={100}
+          height={100}
+          priority={true}
+          alt="Foto de perfil"
+          className="lg:w-full rounded-full border-2 border-slate-800 transition-opacity opacity-0 !z-50"
+          onLoad={image =>
+            image.target.classList.remove("opacity-0")
+          }
+        />
+        <div className="pl-4 lg:pl-0 lg:pt-4">
+          <h2 className="text-2xl font-bold">Uriel Agüero</h2>
+          <h2 className="text-xl font-light text-gray-500">
+            UriAg &middot; he/him
+          </h2>
+        </div>
+      </div>
+      <article>
         <p className="py-3 font-light" style={{ fontSize: ".92rem" }}>
           Liderazgo | Proactivo | Empático | Trabajo en equipo | Rápido
           aprendizaje | Adaptabilidad | Gestión del tiempo | Resolución de

@@ -8,7 +8,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-100 pt-4 pl-4 bg-slate-950 flex flex-col !z-50">
+    <nav className="text-nowrap pt-4 pl-4 bg-slate-950 flex flex-col !z-50">
       <div className="w-full pb-4 flex items-center gap-x-4">
         <div className="flex items-center border border-solid border-white/25 rounded p-1 ">
           <span
@@ -24,8 +24,8 @@ const Header = () => {
         ></span>
         <span className="select-none text-sm">UriAg</span>
       </div>
-      <div className="">
-        <ul className="flex gap-x-4 text-sm items-center">
+      <div>
+        <ul className="flex gap-x-4 text-sm overflow-scroll items-center">
           <li
             className={`${pathname === "/" && "border-b-2 border-red-400"}`}
             onPointerEnter={() => handleChangePointerColor(true)}

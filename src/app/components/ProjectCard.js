@@ -8,8 +8,7 @@ const ProjectCard = ({ title, id, dateStart, dateEnd, description, icon }) => {
 
   return (
     <div
-      className="bg-gray-800/[.40] border-2 border-slate-700 transition-transform rounded-md p-4"
-      style={{ width: "48%" }}
+      className="bg-gray-800/[.40] w-full sm:!w-[48%] border-2 border-slate-700 transition-transform rounded-md p-4"
     >
       <div className="w-full mb-2">
         <Link
@@ -24,7 +23,7 @@ const ProjectCard = ({ title, id, dateStart, dateEnd, description, icon }) => {
           {dateStart} - {dateEnd}
         </p>
       </div>
-      <p className="mb-2 text-sm max-h-16 line-clamp-2">{description}</p>
+      <p className="mb-2 text-sm max-h-16 line-clamp-2" dangerouslySetInnerHTML={{__html:description}}/>
       <div className="flex gap-x-3">
         {icon.length > 0
           ? Object.values(icon).map((el, index) => (

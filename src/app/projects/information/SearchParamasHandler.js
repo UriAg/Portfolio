@@ -18,7 +18,7 @@ const SearchParamsHandler = () => {
   const selectedItem = Object.values(jsonJoin).filter((e) => e.id === id);
 
   return (
-    <div className="w-full z-10">
+    <div className="w-full pt-3 z-10">
       <div className="flex justify-between items-center pb-4 border-b border-gray-400/25">
         <div>
           <h1 className="text-2xl">{selectedItem[0].title}</h1>
@@ -40,8 +40,8 @@ const SearchParamsHandler = () => {
           ></span>
         </button>
       </div>
-      <article className="flex justify-between pt-4">
-        <section className="w-2/3 p-4">
+      <article className="flex flex-col-reverse lg:flex-row justify-between pt-4">
+        <section className="w-full lg:w-2/3 my-4 lg:p-4">
           <div className="w-full flex justify-center">
             {selectedItem[0].main_image ? (
               <Image
@@ -53,15 +53,15 @@ const SearchParamsHandler = () => {
                 className={`${
                   selectedItem[0].id === "expense" ? "w-1/2" : "w-full"
                 } border-2 transition-opacity opacity-0 border-gray-700 !z-50`}
-                onLoadingComplete={(image) =>
-                  image.classList.remove("opacity-0")
+                onLoad={(image) =>
+                  image.target.classList.remove("opacity-0")
                 }
               />
             ) : (
               ""
             )}
           </div>
-          <div className="pt-3 flex gap-3 flex-wrap">
+          <div className="pt-3 flex justify-center lg:justify-between gap-y-5 flex-wrap">
             {selectedItem[0].images.length
               ? selectedItem[0].images.map((image, index) => (
                   <Image
@@ -71,16 +71,16 @@ const SearchParamsHandler = () => {
                     loading="lazy"
                     key={index}
                     alt={`Captura de ${selectedItem[0].title}`}
-                    className="border-2 border-gray-700 !z-50 transition-opacity opacity-0"
-                    onLoadingComplete={(image) =>
-                      image.classList.remove("opacity-0")
+                    className="border-2 w-full lg:w-[48%] border-gray-700 !z-50 transition-opacity opacity-0"
+                    onLoad={(image) =>
+                      image.target.classList.remove("opacity-0")
                     }
                   />
                 ))
               : ""}
           </div>
         </section>
-        <section className="w-1/3 pt-4 px-6 flex flex-col gap-y-4">
+        <section className="w-full lg:w-1/3 pb-4 lg:pb-0 lg:pt-4 lg:px-6 flex flex-col gap-y-4">
           <p
             className="text-md"
             dangerouslySetInnerHTML={{ __html: selectedItem[0].description }}

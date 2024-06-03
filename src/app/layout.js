@@ -54,7 +54,7 @@ const RootLayout = ({ children }) => {
     <Provider>
       <SubLayout>
         <Header />
-        <div className="bg-slate-900 pt-11 px-16 gap-x-3 relative flex">
+        <div className="bg-slate-900 pt-11 px-6 lg:px-16 pb-5 gap-x-3 relative flex flex-col lg:flex-row">
           <LateralProfile />
           <div className="custom-shape-divider-bottom-1716966669 absolute left-0 top-0 w-full -z-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

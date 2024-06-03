@@ -2,9 +2,9 @@ import Logo from "./components/Logo.js";
 
 const Home = () => {
   return (
-    <section className="w-3/4 z-10">
-      <div className="px-12 pb-9">
-        <h1 className="text-2xl pb-6">Sobre mí</h1>
+    <section className="w-full lg:w-3/4 z-10">
+      <div className="lg:px-12 pb-9">
+        <h1 className="text-2xl pb-2 lg:pb-6">Sobre mí</h1>
         <p className="text-lg">
           Profesionalizando mis habilidades de desarrollo durante{" "}
           <b className="text-blue-400">+3 años</b>.{" "}
@@ -23,7 +23,7 @@ const Home = () => {
           profesionales!
         </p>
       </div>
-      <div className="px-12">
+      <div className="lg:px-12">
         <h2 className="text-2xl pb-3">Tecnologías</h2>
         <div className="w-full flex flex-wrap gap-2">
           <Logo icon="icon-[logos--html-5]" tooltipText="HTML5" />

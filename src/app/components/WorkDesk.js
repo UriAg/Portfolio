@@ -22,9 +22,9 @@ const WorkDesk = ({ workJson }) => {
   }, [projectsList, projectsOrder]);
 
   return (
-    <section className="w-3/4 px-12 z-10">
-      <div className="w-full flex justify-between">
-        <h1 className="text-2xl pb-6">Proyectos</h1>
+    <section className="w-full lg:w-3/4 lg:px-12 z-10">
+      <div className="w-full pb-6 flex flex-col sm:flex-row sm:justify-between sm:items-center">
+        <h1 className="text-2xl">Proyectos</h1>
         <p>
           Ordenar por:&nbsp;
           <span
