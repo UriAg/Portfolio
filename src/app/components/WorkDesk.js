@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import ProjectCard from "../components/ProjectCard.js";
 import { useCustomContext } from "../context/utilsContext.js";
 
-const WorkDesk = ({ workJson }) => {
+const WorkDesk = ({ workJson, type }) => {
   const { handleChangePointerColor } = useCustomContext();
   const [projectsList, setProjectList] = useState(Object.values(workJson));
   const [projectsOrder, setProjectsOrder] = useState("newest");
@@ -24,7 +24,7 @@ const WorkDesk = ({ workJson }) => {
   return (
     <section className="w-full lg:w-3/4 lg:px-12 z-10">
       <div className="w-full pb-6 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-        <h1 className="text-2xl">Proyectos</h1>
+        <h1 className="text-2xl">{type==='experience'?'Trabajos':'Proyectos'}</h1>
         <p>
           Ordenar por:&nbsp;
           <span
