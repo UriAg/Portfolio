@@ -6,38 +6,56 @@ import { Provider } from "./context/utilsContext";
 
 export const metadata = {
   title: "¡Bienvenido!",
-  description: "¿Buscas crear un sitio altamente personalizado y funcional para tu comercio? Estoy para ayudarte, ¡hablemos!",
-  keywords: ["Portfolio", "Uriel", "Aguero", "Uriel Aguero", "Programación", "Desarrollador", "Reactjs", "NextJS", "Tailwind", "Developer", "Programador", "Web", "Fullstack", "Backend", "Frontend", "Lead", "Confianza"],
+  description:
+    "¿Buscas crear un sitio altamente personalizado y funcional para tu comercio? Estoy para ayudarte, ¡hablemos!",
+  keywords: [
+    "Portfolio",
+    "Uriel",
+    "Aguero",
+    "Uriel Aguero",
+    "Programación",
+    "Desarrollador",
+    "Reactjs",
+    "NextJS",
+    "Tailwind",
+    "Developer",
+    "Programador",
+    "Web",
+    "Fullstack",
+    "Backend",
+    "Frontend",
+    "Lead",
+    "Confianza",
+  ],
   author: "Uriel Agüero",
   creator: "Uriel Agüero",
   copyright: "Uriel Agüero",
-  openGraph:{
-    title: 'Uriel Agüero portfolio',
-    description: "¿Buscas crear un sitio altamente personalizado y funcional para tu comercio? Estoy para ayudarte, ¡hablemos!",
-    image: '@/app/public/image/favicon.ico',
-    type: 'website',
-    title: 'Uriel Agüero portfolio',
-    locale: 'es_ES',
-    title: 'Uriel Agüero portfolio',
+  openGraph: {
+    title: "Uriel Agüero portfolio",
+    description:
+      "¿Buscas crear un sitio altamente personalizado y funcional para tu comercio? Estoy para ayudarte, ¡hablemos!",
+    image: "@/app/public/image/favicon.ico",
+    type: "website",
+    title: "Uriel Agüero portfolio",
+    locale: "es_ES",
+    title: "Uriel Agüero portfolio",
   },
   link: [
     {
       rel: "icon",
       type: "image/x-icon",
-      href: "@/app/public/image/favicon.ico"
-    }
-  ]
+      href: "@/app/public/image/favicon.ico",
+    },
+  ],
 };
 
-
 const RootLayout = ({ children }) => {
-
   return (
     <Provider>
       <SubLayout>
-        <Header/>
+        <Header />
         <div className="bg-slate-900 pt-11 px-16 gap-x-3 relative flex">
-          <LateralProfile/>
+          <LateralProfile />
           <div className="custom-shape-divider-bottom-1716966669 absolute left-0 top-0 w-full -z-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path

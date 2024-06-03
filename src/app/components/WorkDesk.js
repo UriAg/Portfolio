@@ -1,49 +1,76 @@
-'use client'
-import { useMemo, useState } from 'react'
-import ProjectCard from '../components/ProjectCard.js'
-import { useCustomContext } from '../context/utilsContext.js'
+"use client";
+import { useMemo, useState } from "react";
+import ProjectCard from "../components/ProjectCard.js";
+import { useCustomContext } from "../context/utilsContext.js";
 
 const WorkDesk = ({ workJson }) => {
   const { handleChangePointerColor } = useCustomContext();
   const [projectsList, setProjectList] = useState(Object.values(workJson));
-  const [projectsOrder, setProjectsOrder] = useState('newest');
+  const [projectsOrder, setProjectsOrder] = useState("newest");
 
-  const handleOrderChange = (state) =>{
-    setProjectsOrder(state)
-  }
+  const handleOrderChange = (state) => {
+    setProjectsOrder(state);
+  };
 
   const proyectosOrdenados = useMemo(() => {
     const sortedProjects = [...projectsList].sort((a, b) => {
-      const dateA = new Date(a.date_start.split('/').reverse().join('-'));
-      const dateB = new Date(b.date_start.split('/').reverse().join('-'));
-      return projectsOrder === 'newest' ? dateB - dateA : dateA - dateB;
+      const dateA = new Date(a.date_start.split("/").reverse().join("-"));
+      const dateB = new Date(b.date_start.split("/").reverse().join("-"));
+      return projectsOrder === "newest" ? dateB - dateA : dateA - dateB;
     });
     return sortedProjects;
   }, [projectsList, projectsOrder]);
 
   return (
-    <section className='w-3/4 px-12 z-10'>
-      <div className='w-full flex justify-between'>
-        <h1 className='text-2xl pb-6'>Proyectos</h1>
+    <section className="w-3/4 px-12 z-10">
+      <div className="w-full flex justify-between">
+        <h1 className="text-2xl pb-6">Proyectos</h1>
         <p>
           Ordenar por:&nbsp;
-          <span className={`${projectsOrder === 'newest' ? "text-red-400" : "hover:text-gray-500"} transition-colors`} onClick={()=> handleOrderChange('newest')} onPointerEnter={()=>handleChangePointerColor(true)} onPointerLeave={()=>handleChangePointerColor(false)}>Reciente primero</span>
-            &nbsp;-&nbsp;
-          <span className={`${projectsOrder === 'oldest' ? "text-red-400" : "hover:text-gray-500"} transition-colors`} onClick={()=> handleOrderChange('oldest')} onPointerEnter={()=>handleChangePointerColor(true)} onPointerLeave={()=>handleChangePointerColor(false)}>Antiguo primero</span>
+          <span
+            className={`${
+              projectsOrder === "newest"
+                ? "text-red-400"
+                : "hover:text-gray-500"
+            } transition-colors`}
+            onClick={() => handleOrderChange("newest")}
+            onPointerEnter={() => handleChangePointerColor(true)}
+            onPointerLeave={() => handleChangePointerColor(false)}
+          >
+            Reciente primero
+          </span>
+          &nbsp;-&nbsp;
+          <span
+            className={`${
+              projectsOrder === "oldest"
+                ? "text-red-400"
+                : "hover:text-gray-500"
+            } transition-colors`}
+            onClick={() => handleOrderChange("oldest")}
+            onPointerEnter={() => handleChangePointerColor(true)}
+            onPointerLeave={() => handleChangePointerColor(false)}
+          >
+            Antiguo primero
+          </span>
         </p>
       </div>
-      <section className='flex justify-between flex-wrap gap-y-6'>
-        {
-          proyectosOrdenados.length > 0 ?
-          (proyectosOrdenados.map((project, index)=>(
-            <ProjectCard key={index} title={project.title} id={project.id} dateStart={project.date_start} dateEnd={project.date_end} description={project.description} icon={project.icon}/>
-          )))
-          :
-          ('Cargando...')
-        }
+      <section className="flex justify-between flex-wrap gap-y-6">
+        {proyectosOrdenados.length > 0
+          ? proyectosOrdenados.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                id={project.id}
+                dateStart={project.date_start}
+                dateEnd={project.date_end}
+                description={project.description}
+                icon={project.icon}
+              />
+            ))
+          : "Cargando..."}
       </section>
     </section>
-  )
-}
+  );
+};
 
-export default WorkDesk
+export default WorkDesk;
