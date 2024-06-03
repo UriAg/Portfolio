@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Soon = () => {
   return (
       <div className='z-10 w-2/3 h-full flex justify-center items-center flex-col'>
