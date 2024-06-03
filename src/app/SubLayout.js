@@ -10,6 +10,8 @@ const SubLayout = ({ children }) => {
     open,
     cursorPosition,
     handleChangePointerPosition,
+    handleEnablePointer,
+    enabledPointer
   } = useCustomContext();
 
   return (
@@ -19,11 +21,13 @@ const SubLayout = ({ children }) => {
           open && "overflow-hidden"
         } relative cursor-none overflow-x-hidden`}
         onPointerMove={(e) => handleChangePointerPosition(e)}
+        onPointerEnter={handleEnablePointer}
+        onPointerLeave={handleEnablePointer}
       >
         <span
           className={`absolute w-4 h-4 ${
             pointerHover ? "bg-red-400" : "bg-green-600"
-          } hidden lg:block rounded-full z-50 pointer-events-none transform-all`}
+          } hidden lg:${enabledPointer ? "block" : "hidden"} rounded-full z-50 pointer-events-none transform-all`}
           style={{
             left: `${cursorPosition.x}px`,
             top: `${cursorPosition.y}px`,

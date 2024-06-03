@@ -21,6 +21,11 @@ export const Provider = ({ children }) => {
 
   const [title, setTitle] = useState("Bienvenido!");
 
+  const [enabledPointer, setPointerEnabled] = useState(false);
+
+  const handleEnablePointer = () =>{
+    setPointerEnabled(!enabledPointer);
+  }
   const value = {
     pointerHover,
     handleChangePointerColor,
@@ -28,6 +33,8 @@ export const Provider = ({ children }) => {
     handleChangePointerPosition,
     title,
     setTitle,
+    enabledPointer,
+    handleEnablePointer
   };
 
   return (
