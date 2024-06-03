@@ -27,7 +27,7 @@ const SubLayout = ({ children }) => {
         <span
           className={`absolute w-4 h-4 ${
             pointerHover ? "bg-red-400" : "bg-green-600"
-          } hidden lg:${enabledPointer ? "!block" : "!hidden"} rounded-full z-50 pointer-events-none transform-all`}
+          } hidden ${enabledPointer ? "lg:!block" : "lg:!hidden"} rounded-full z-50 pointer-events-none transform-all`}
           style={{
             left: `${cursorPosition.x}px`,
             top: `${cursorPosition.y}px`,
