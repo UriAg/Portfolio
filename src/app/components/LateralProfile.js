@@ -21,11 +21,11 @@ const LateralProfile = () => {
       <div className="flex items-center lg:items-start lg:flex-col">
         <Image
           src="/personal-image.jpg"
-          width={100}
-          height={100}
+          width={300}
+          height={300}
           priority={true}
           alt="Foto de perfil"
-          className="lg:w-full rounded-full border-2 border-slate-800 transition-opacity opacity-0 !z-50"
+          className="w-28 lg:w-full rounded-full border-2 border-slate-800 transition-opacity opacity-0 !z-50"
           onLoad={image =>
             image.target.classList.remove("opacity-0")
           }

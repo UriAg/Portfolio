@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div className="lg:px-12">
         <h2 className="text-2xl pb-3">Tecnologías</h2>
-        <div className="w-full flex flex-wrap gap-2">
+        <div className="w-full flex justify-evenly flex-wrap gap-4">
           <Logo icon="icon-[logos--html-5]" tooltipText="HTML5" />
           <Logo icon="icon-[logos--css-3]" tooltipText="CSS3" />
           <Logo icon="icon-[logos--sass]" tooltipText="SASS" />
