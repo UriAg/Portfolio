@@ -23,8 +23,8 @@ export const Provider = ({ children }) => {
 
   const [enabledPointer, setPointerEnabled] = useState(false);
 
-  const handleEnablePointer = () =>{
-    setPointerEnabled(!enabledPointer);
+  const handleEnablePointer = (state) =>{
+    setPointerEnabled(state);
   }
   const value = {
     pointerHover,

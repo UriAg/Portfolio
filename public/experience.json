@@ -3,7 +3,7 @@
         "natural":{
             "title":"Natural Icy Market",
             "id":"natural",
-            "description":"- Lideré el desarrollo de una tienda online para un almacén natural, desarrollando el backend y supervisando la calidad del código <b style='color:rgb(59 130 246)'>frontend</b> con <b style='color:rgb(59 130 246)'>ReactJs</b> y <b style='color:rgb(59 130 246)'>MUI</b>.<br>- Tomé el rol de <b style='color:rgb(59 130 246)'>Team lead</b>, dirigiendo eficazmente un equipo multidisciplinario compuesto por diseñadores, desarrolladores, community managers y product managers.<br>- Desarrollé y optimicé el <b style='color:rgb(59 130 246)'>backend</b>, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b>.<br>- Resultado: Logramos un sitio web visualmente atractivo, contextualmente relevante para el comercio y altamente funcional.",
+            "description":"- Lideré el desarrollo de una tienda online para un almacén natural, desarrollando el backend y supervisando la calidad del código <b style='color:rgb(59 130 246)'>frontend</b> con <b style='color:rgb(59 130 246)'>ReactJs</b> y <b style='color:rgb(59 130 246)'>MUI</b>.<br>- Tomé el rol de <b style='color:rgb(59 130 246)'>Team lead</b>, dirigiendo eficazmente un equipo multidisciplinario compuesto por diseñadores, desarrolladores, community managers y product managers.<br>- Desarrollé y optimicé el <b style='color:rgb(59 130 246)'>backend</b>, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b>.<br>- Resultado: Logramos un sitio web visualmente atractivo, contextualmente relevante para el comercio y altamente funcional.<br><br>(Estoy migrando la BDD, puede no cargar productos)",
             "icon":["icon-[logos--react]", "icon-[logos--git-icon]", "icon-[logos--material-ui]", "icon-[logos--nodejs-icon]", "icon-[logos--express] invert", "icon-[logos--mongodb-icon]"],
             "date_start":"10/12/2023",
             "date_end":"12/02/2024",
@@ -26,17 +26,17 @@
             "main_image":"flart-1.png",
             "images":["flart-2.png", "flart-3.png", "flart-4.png"]
         },
-        "expense":{
-            "title":"Anotador de gastos",
-            "id":"expense",
+        "exviser":{
+            "title":"Exviser",
+            "id":"exviser",
             "description":"Aplicación web para moviles creada por y para estudiantes, su objetivo es mantener un registro de sus gastos para asegurar un estratégico manejo de su economía. Desarrollado para celulares",
             "icon":["icon-[logos--material-ui]", "icon-[logos--react]", "icon-[logos--git-icon]", "icon-[logos--sass]"],
             "date_start":"09/04/2024",
             "date_end":"05/05/2024",
             "github_link":"https://github.com/UriAg/Expense-recorder",
             "link":"https://expense-recorder-pi.vercel.app/",
-            "main_image":"expense-1.png",
-            "images":["expense-2.png", "expense-3.png", "expense-4.png"]
+            "main_image":"exviser-1.png",
+            "images":["exviser-2.png", "exviser-3.png", "exviser-4.png"]
         },
         "archiver":{
             "title":"Archivero",
