@@ -83,17 +83,15 @@ const Header = () => {
           </li>
           <li
             className={`${pathname === "/soon" && "border-b-2 border-red-400"}`}
-            onPointerEnter={() => handleChangePointerColor(true)}
-            onPointerLeave={() => handleChangePointerColor(false)}
           >
-            <a className=" h-9 px-2.5 cursor-none flex items-center gap-x-1.5">
+            <span className=" h-9 px-2.5 cursor-none flex items-center gap-x-1.5">
               <span
                 className="icon-[gala--lock] w-4 h-4"
                 role="img"
                 aria-hidden="true"
               ></span>
               <span>Proximamente</span>
-            </a>
+            </span>
           </li>
         </ul>
       </div>
