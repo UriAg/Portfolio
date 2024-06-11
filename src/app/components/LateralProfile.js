@@ -31,14 +31,14 @@ const LateralProfile = () => {
           }
         />
         <div className="pl-4 lg:pl-0 lg:pt-4">
-          <h2 className="text-2xl font-bold">Uriel Agüero</h2>
-          <h2 className="text-xl font-light text-gray-500">
+          <h2 className="text-2xl font-extrabold">Uriel Agüero</h2>
+          <h2 className="text-xl font-light text-gray-400">
             UriAg &middot; he/him
           </h2>
         </div>
       </div>
       <article>
-        <p className="py-3 font-light" style={{ fontSize: ".92rem" }}>
+        <p className="py-3" style={{ fontSize: ".92rem" }}>
           Liderazgo | Proactivo | Empático | Trabajo en equipo | Rápido
           aprendizaje | Adaptabilidad | Gestión del tiempo | Resolución de
           problemas | Autodidacta | Responsable | Comunicador efectivo |
