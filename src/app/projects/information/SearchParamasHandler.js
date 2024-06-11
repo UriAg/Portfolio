@@ -28,6 +28,7 @@ const SearchParamsHandler = () => {
         </div>
         <button
           type="button"
+          aria-label="Volver"
           onClick={() => window.history.back()}
           className="cursor-none hover:text-red-400 transition-colors"
           onPointerEnter={() => handleChangePointerColor(true)}

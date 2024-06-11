@@ -67,8 +67,9 @@ const LateralProfile = () => {
               </a>
               <span
                 className="icon-[bi--copy] w-4 h-4 hover:bg-red-400"
-                role="img"
+                role="button"
                 aria-hidden="true"
+                aria-label="Copiar email"
                 onClick={handleCopy}
               ></span>
               {successCopy && (
