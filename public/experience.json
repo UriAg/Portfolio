@@ -3,12 +3,11 @@
         "natural":{
             "title":"Natural Icy Market",
             "id":"natural",
-            "description":"- Lideré el desarrollo de una tienda online para un almacén natural, desarrollando el backend y supervisando la calidad del código <b style='color:rgb(59 130 246)'>frontend</b> con <b style='color:rgb(59 130 246)'>ReactJs</b> y <b style='color:rgb(59 130 246)'>MUI</b>.<br>- Tomé el rol de <b style='color:rgb(59 130 246)'>Team lead</b>, dirigiendo eficazmente un equipo multidisciplinario compuesto por diseñadores, desarrolladores, community managers y product managers.<br>- Desarrollé y optimicé el <b style='color:rgb(59 130 246)'>backend</b>, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b>.<br>- Resultado: Logramos un sitio web visualmente atractivo, contextualmente relevante para el comercio y altamente funcional.",
+            "description":"- Lideré el desarrollo de una tienda online para un almacén natural, desarrollando el backend y supervisando la calidad del código <b style='color:rgb(59 130 246)'>frontend</b> con <b style='color:rgb(59 130 246)'>ReactJs</b> y <b style='color:rgb(59 130 246)'>MUI</b>.<br>- Tomé el rol de <b style='color:rgb(59 130 246)'>Team lead</b>, dirigiendo eficazmente un equipo multidisciplinario compuesto por diseñadores, desarrolladores, community managers y product managers.<br>- Desarrollé y optimicé el <b style='color:rgb(59 130 246)'>backend</b>, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b>.<br>- Resultado: Logramos un sitio web visualmente atractivo, contextualmente relevante para el comercio y altamente funcional. (Link deshabilitado porque estoy usando la base de datos para un nuevo proyecto más grande)",
             "icon":["icon-[logos--react]", "icon-[logos--git-icon]", "icon-[logos--material-ui]", "icon-[logos--sass]", "icon-[logos--nodejs-icon]", "icon-[logos--express] invert", "icon-[logos--mongodb-icon]"],
             "date_start":"10/12/2023",
             "date_end":"12/02/2024",
             "github_link":"",
-            "link":"https://natural-icy-market.vercel.app/",
             "main_image":"natural-1.png",
             "images":["natural-2.png", "natural-3.png", "natural-4.png", "natural-5.png", "natural-6.png", "natural-7.png", "natural-8.png", "natural-9.png", "natural-10.png", "natural-11.png"]
         }
