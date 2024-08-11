@@ -10,9 +10,9 @@ const LateralProfile = () => {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText("uriel.aguero1812@gmail.com");
-      setSuccessCopy("¡Copiado!");
+      setSuccessCopy(true);
     } catch (error) {
-      setSuccessCopy("Error");
+      setSuccessCopy(false);
     }
   };
 
@@ -50,13 +50,13 @@ const LateralProfile = () => {
         <div className="pt-3">
           <ul className="text-sm">
             <li
-              className="pb-2 flex items-center gap-x-2"
+              className="pb-2 flex justify-start items-center gap-x-2"
               onPointerEnter={() => handleChangePointerColor(true)}
               onPointerLeave={() => handleChangePointerColor(false)}
             >
               <a
                 href="mailto:uriel.aguero1812@gmail.com"
-                className="flex items-center gap-x-2 cursor-none hover:text-red-400"
+                className="flex items-center gap-x-2 cursor-none hover:text-green-600"
               >
                 <span
                   className="icon-[bi--envelope]"
@@ -65,21 +65,28 @@ const LateralProfile = () => {
                 ></span>
                 uriel.aguero1812@gmail.com
               </a>
-              <span
-                className="icon-[bi--copy] w-4 h-4 hover:bg-red-400"
-                role="button"
-                aria-hidden="true"
-                aria-label="Copiar email"
-                onClick={handleCopy}
-              ></span>
+              {
+                successCopy ? (
+                  <span className="icon-[icon-park-solid--correct] w-4 h-4 text-green-600" role="img" aria-hidden="true" />
+                ) : (
+                  <span
+                    className="icon-[bi--copy] w-5 h-5 hover:text-green-600 cursor-none"
+                    role="button"
+                    aria-hidden="true"
+                    aria-label="Copiar email"
+                    onClick={handleCopy}
+                  ></span>
+                )
+              }
+              
               {successCopy && (
-                <span className="text-red-400 text-xs opacity-70">
+                <span className="text-green-600 text-xs opacity-70">
                   {successCopy}
                 </span>
               )}
             </li>
             <li
-              className="pb-2 hover:text-red-400"
+              className="pb-2 hover:text-green-600"
               onPointerEnter={() => handleChangePointerColor(true)}
               onPointerLeave={() => handleChangePointerColor(false)}
             >
@@ -97,7 +104,7 @@ const LateralProfile = () => {
               </a>
             </li>
             <li
-              className="pb-2 hover:text-red-400"
+              className="pb-2 hover:text-green-600"
               onPointerEnter={() => handleChangePointerColor(true)}
               onPointerLeave={() => handleChangePointerColor(false)}
             >
@@ -115,7 +122,7 @@ const LateralProfile = () => {
               </a>
             </li>
             <li
-              className="hover:text-red-400"
+              className="hover:text-green-600"
               onPointerEnter={() => handleChangePointerColor(true)}
               onPointerLeave={() => handleChangePointerColor(false)}
             >

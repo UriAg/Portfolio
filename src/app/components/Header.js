@@ -1,4 +1,5 @@
 "use client";
+import '../globals.css'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCustomContext } from "../context/utilsContext";
@@ -25,7 +26,7 @@ const Header = () => {
         <span className="select-none text-sm">UriAg</span>
       </div>
       <div>
-        <ul className="flex gap-x-4 text-sm overflow-scroll sm:overflow-hidden items-center">
+        <ul className="flex gap-x-4 text-sm hidden-scrollbar overflow-scroll sm:overflow-hidden items-center">
           <li
             className={`${pathname === "/" && "border-b-2 border-red-400"}`}
             onPointerEnter={() => handleChangePointerColor(true)}

@@ -4,9 +4,10 @@ import experience from "../../../../public/experience.json";
 import { useCustomContext } from "@/app/context/utilsContext";
 import Logo from "@/app/components/Logo";
 import Image from "next/image";
+import { useState } from "react";
 
 const SearchParamsHandler = () => {
-  const { handleChangePointerColor } = useCustomContext();
+  const { handleChangePointerColor, setSelectedImage } = useCustomContext();
 
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
@@ -30,7 +31,7 @@ const SearchParamsHandler = () => {
           type="button"
           aria-label="Volver"
           onClick={() => window.history.back()}
-          className="cursor-none hover:text-red-400 transition-colors"
+          className="cursor-none hover:text-green-600 transition-colors"
           onPointerEnter={() => handleChangePointerColor(true)}
           onPointerLeave={() => handleChangePointerColor(false)}
         >
@@ -43,39 +44,25 @@ const SearchParamsHandler = () => {
       </div>
       <article className="flex flex-col-reverse lg:flex-row justify-between pt-4">
         <section className="w-full lg:w-2/3 my-4 lg:p-4">
-          <div className="w-full flex justify-center">
-            {selectedItem[0].main_image ? (
-              <Image
-                src={`/images/${selectedItem[0].id}/${selectedItem[0].main_image}`}
-                width={500}
-                height={500}
-                priority={true}
-                alt={`Captura principal de ${selectedItem[0].title}`}
-                className={`${
-                  selectedItem[0].id === "expense" ? "w-1/2" : "w-full"
-                } border-2 transition-opacity opacity-0 border-gray-700 !z-50`}
-                onLoad={(image) =>
-                  image.target.classList.remove("opacity-0")
-                }
-              />
-            ) : (
-              ""
-            )}
-          </div>
           <div className="pt-3 flex justify-center lg:justify-between gap-y-5 flex-wrap">
             {selectedItem[0].images.length
               ? selectedItem[0].images.map((image, index) => (
                   <Image
                     src={`/images/${selectedItem[0].id}/${image}`}
-                    width={300}
-                    height={300}
+                    width={1000}
+                    height={1000}
                     loading="lazy"
+                    onClick={() =>
+                      setSelectedImage(`/images/${selectedItem[0].id}/${image}`)
+                    }
                     key={index}
                     alt={`Captura de ${selectedItem[0].title}`}
-                    className="border-2 w-full lg:w-[48%] border-gray-700 !z-50 transition-opacity opacity-0"
+                    className="border-2 w-full lg:w-[48%] border-gray-700 !z-50 transition-opacity opacity-0 transition-transform hover:scale-105"
                     onLoad={(image) =>
                       image.target.classList.remove("opacity-0")
                     }
+                    onPointerEnter={() => handleChangePointerColor(true)}
+                    onPointerLeave={() => handleChangePointerColor(false)}
                   />
                 ))
               : ""}

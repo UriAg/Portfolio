@@ -49,6 +49,7 @@ export const metadata = {
   ],
 };
 
+
 const RootLayout = ({ children }) => {
   return (
     <Provider>

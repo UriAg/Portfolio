@@ -6,6 +6,7 @@ const UtilsContext = createContext();
 export const useCustomContext = () => useContext(UtilsContext);
 
 export const Provider = ({ children }) => {
+  const [selectedImage, setSelectedImage] = useState(false);
   const [pointerHover, setPointerHover] = useState(false);
   const handleChangePointerColor = (state) => {
     setPointerHover(state);
@@ -26,6 +27,7 @@ export const Provider = ({ children }) => {
   const handleEnablePointer = (state) =>{
     setPointerEnabled(state);
   }
+
   const value = {
     pointerHover,
     handleChangePointerColor,
@@ -34,7 +36,9 @@ export const Provider = ({ children }) => {
     title,
     setTitle,
     enabledPointer,
-    handleEnablePointer
+    handleEnablePointer,
+    selectedImage,
+    setSelectedImage
   };
 
   return (

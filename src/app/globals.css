@@ -7,6 +7,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* 
+.hidden-scrollbar::-webkit-scrollbar{
+  visibility: hidden;
+} */
 
 :root {
   --foreground-rgb: 255, 255, 255;
