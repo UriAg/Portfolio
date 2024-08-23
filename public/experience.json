@@ -3,7 +3,7 @@
     "natural": {
       "title": "Natural Icy Market",
       "id": "natural",
-      "description": "- Lideré el desarrollo de una tienda online para un almacén natural, desarrollando el backend y supervisando la calidad del código <b style='color:rgb(59 130 246)'>frontend</b> con <b style='color:rgb(59 130 246)'>ReactJs</b> y <b style='color:rgb(59 130 246)'>MUI</b>.<br>- Tomé el rol de <b style='color:rgb(59 130 246)'>Team lead</b>, dirigiendo eficazmente un equipo multidisciplinario compuesto por diseñadores, desarrolladores, community managers y product managers.<br>- Desarrollé y optimicé el <b style='color:rgb(59 130 246)'>backend</b>, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b>.<br>- Resultado: Logramos un sitio web visualmente atractivo, contextualmente relevante para el comercio y altamente funcional. (Link deshabilitado porque estoy usando la base de datos para un nuevo proyecto más grande)",
+      "description": "<b style='color:rgb(59 130 246)'>●</b> Lideré el desarrollo de una tienda online para un comercio gastronómico, acortando un <b style='color:rgb(59 130 246)'>50%</b> los plazos de entrega, además de mejorar el orden y claridad del desarrollo mediante la <b style='color:rgb(59 130 246)'>división estratégica</b> de tareas.<br><b style='color:rgb(59 130 246)'>●</b> Codesarrollé y supervisé la calidad del código frontend optimizando rendimiento, tiempos por sección y verificando tener la menor redundancia posible siguiendo el principio <b style='color:rgb(59 130 246)'>DRY</b>, consiguiendo resultados idénticos a los proporcionados por el area de diseño.<br><b style='color:rgb(59 130 246)'>●</b> Diseñé y desarrollé el BackEnd, asegurando su <b style='color:rgb(59 130 246)'>funcionalidad</b>, <b style='color:rgb(59 130 246)'>escalabilidad</b> y <b style='color:rgb(59 130 246)'>eficiencia</b> conformando un servidor robusto apto para un gran flujo de usuarios.",
       "icon": [
         "icon-[logos--react]",
         "icon-[logos--git-icon]",
@@ -32,7 +32,7 @@
     "trabajoscba": {
       "title": "TrabajosCba",
       "id": "tcba",
-      "description": "- Desarrollé una plataforma destinada a la búsqueda laboral en Córdoba capital, ofreciendo sencillez, comodidad y orientación a los usuarios. <br>- Generé un flujo de usuarios constante debido a la <b style='color:rgb(59 130 246)'>UX/UI</b> intuitiva y la eficacia de la plataforma. <br>- Conseguí reducir significativamente los gastos de operatividad a través de técnicas, configuraciones y tecnologías actuales.<br>- Resultado: Logré un sitio web que facilita el proceso de búsqueda laboral/ de candidatos, brindando al sector desempleado más oportunidades. ",
+      "description": "<b style='color:rgb(59 130 246)'>●</b> Reduje un <b style='color:rgb(59 130 246)'>60%</b> los costes de <b style='color:rgb(59 130 246)'>operatividad</b> y <b style='color:rgb(59 130 246)'>rendimiento</b> a través de la implementación de técnicas, configuraciones, tecnologías actuales e integrar servicios de terceros para optimizar subprocesos.<br><b style='color:rgb(59 130 246)'>●</b> Desarrollé una plataforma unificada de componentes y herramientas para centralizar las postulaciones laborales <b style='color:rgb(59 130 246)'>facilitando</b> la divulgación de vacantes y <b style='color:rgb(59 130 246)'>potenciando</b> la empleabilidad, logrando un proceso de publicación y aplicación un <b style='color:rgb(59 130 246)'>50%</b> más <b style='color:rgb(59 130 246)'>rápido</b> y <b style='color:rgb(59 130 246)'>100%</b> más <b style='color:rgb(59 130 246)'>accesible</b> en Córdoba capital.<br><b style='color:rgb(59 130 246)'>●</b> Generé un aumento de flujo de usuarios debido a un diseño altamente atractivo e intuitivo <b style='color:rgb(59 130 246)'>adaptado</b> a todos los dispositivos y un performance optimizado para acortar los tiempos de espera en un <b style='color:rgb(59 130 246)'>20%</b> consiguiendo una experiencia <b style='color:rgb(59 130 246)'>mas fluida</b>.",
       "icon": [
         "icon-[logos--react]",
         "icon-[logos--nextjs-icon]",
@@ -90,15 +90,15 @@
     "archiver": {
       "title": "Archivero",
       "id": "archiver",
-      "description": "Archivero para la creación y búsqueda de registros de cualquier tipo. Entrega final de la carrera frontend de Coderhouse, etapa JavaScript. Se implementó el uso de librerías como Toastify y SweetAlert, manejo del DOM, validación de campos, llamadas síncronas/asíncronas, existencia y manipulación de datos e interactividad mediante JS vanilla",
+      "description": "Archivero para la creación y búsqueda de registros de cualquier tipo. Se implementó el uso de librerías como Toastify y SweetAlert, manejo del DOM, validación de campos, llamadas síncronas/asíncronas, existencia y manipulación de datos e interactividad mediante JS vanilla",
       "icon": [
         "icon-[logos--css-3]",
         "icon-[logos--git-icon]",
         "icon-[logos--html-5]",
         "icon-[logos--javascript]"
       ],
-      "date_start": "04/05/2023",
-      "date_end": "26/06/2023",
+      "date_start": "04/05/2020",
+      "date_end": "26/06/2020",
       "github_link": "https://github.com/UriAg/PreEntrega3_JS_Aguero",
       "link": "https://uriag.github.io/PreEntrega3_JS_Aguero/",
       "images": [
@@ -115,8 +115,8 @@
       "id": "wire",
       "description": "Aplicación destinada al dimensionamiento de la sección del cableado eléctrico de una instalación, su público objetivo son electricistas que requieran una forma amigable de optimizar este tedioso proceso de cálculo repetitivo",
       "icon": ["icon-[logos--css-3]", "icon-[logos--react]"],
-      "date_start": "14/11/2022",
-      "date_end": "22/12/2022",
+      "date_start": "14/11/2021",
+      "date_end": "22/12/2021",
       "github_link": "https://github.com/UriAg/wire-section-calculator",
       "link": "https://wire-section-calculator.vercel.app/",
       "images": ["wire-1.png", "wire-2.png", "wire-3.png"]

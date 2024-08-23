@@ -34,8 +34,10 @@ const Home = () => {
           <Logo icon="icon-[logos--firebase]" tooltipText="Firebase" />
           <Logo icon="icon-[logos--material-ui]" tooltipText="Material UI" />
           <Logo icon="icon-[logos--javascript]" tooltipText="JavaScript" />
+          <Logo icon="icon-[logos--typescript-icon]" tooltipText="TypeScript" />
           <Logo icon="icon-[logos--react]" tooltipText="ReactJS" />
           <Logo icon="icon-[logos--nextjs-icon]" tooltipText="NextJS" />
+          <Logo icon="icon-[vscode-icons--file-type-angular]" tooltipText="Angular" />
           <Logo icon="icon-[logos--nodejs-icon]" tooltipText="NodeJS" />
           <Logo icon="icon-[logos--express] invert" tooltipText="ExpressJS" />
           <Logo icon="icon-[logos--git-icon]" tooltipText="Git" />
