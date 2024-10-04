@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import Image from "next/image";
 import React from "react";
-import { useCustomContext } from "../context/utilsContext";
+import { useCustomContext } from "../_context/utilsContext";
 
 function ImageViewer() {
   const { setSelectedImage, selectedImage, handleChangePointerColor } =
@@ -17,7 +17,7 @@ function ImageViewer() {
           type="button"
           aria-label="Cerrar"
           onClick={() => setSelectedImage(false)}
-          className="cursor-none transition-colors absolute top-[1em] left-[1em] md:top-[3em]
+          className="transition-colors absolute top-[1em] left-[1em] md:top-[3em]
           md:left-[3em]"
           onPointerEnter={() => handleChangePointerColor(true)}
           onPointerLeave={() => handleChangePointerColor(false)}

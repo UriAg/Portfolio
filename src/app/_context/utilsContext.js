@@ -12,18 +12,7 @@ export const Provider = ({ children }) => {
     setPointerHover(state);
   };
 
-  const [cursorPosition, setPosition] = useState({ x: 0, y: 0 });
-  const handleChangePointerPosition = (e) => {
-    setPosition({
-      x: e.pageX,
-      y: e.pageY,
-    });
-  };
-
-  const [title, setTitle] = useState("Bienvenido!");
-
   const [enabledPointer, setPointerEnabled] = useState(false);
-
   const handleEnablePointer = (state) =>{
     setPointerEnabled(state);
   }
@@ -31,14 +20,10 @@ export const Provider = ({ children }) => {
   const value = {
     pointerHover,
     handleChangePointerColor,
-    cursorPosition,
-    handleChangePointerPosition,
-    title,
-    setTitle,
     enabledPointer,
     handleEnablePointer,
     selectedImage,
-    setSelectedImage
+    setSelectedImage,
   };
 
   return (

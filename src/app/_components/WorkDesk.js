@@ -1,11 +1,10 @@
 "use client";
 import { useMemo, useState } from "react";
-import ProjectCard from "../components/ProjectCard.js";
-import { useCustomContext } from "../context/utilsContext.js";
+import ProjectCard from "./ProjectCard.js";
+import { useCustomContext } from "../_context/utilsContext.js";
 
 const WorkDesk = ({ workJson, type }) => {
   const { handleChangePointerColor } = useCustomContext();
-  const [projectsList, setProjectList] = useState(Object.values(workJson));
   const [projectsOrder, setProjectsOrder] = useState("newest");
 
   const handleOrderChange = (state) => {
@@ -13,13 +12,13 @@ const WorkDesk = ({ workJson, type }) => {
   };
 
   const proyectosOrdenados = useMemo(() => {
-    const sortedProjects = [...projectsList].sort((a, b) => {
+    const sortedProjects = [...Object.values(workJson)].sort((a, b) => {
       const dateA = new Date(a.date_start.split("/").reverse().join("-"));
       const dateB = new Date(b.date_start.split("/").reverse().join("-"));
       return projectsOrder === "newest" ? dateB - dateA : dateA - dateB;
     });
     return sortedProjects;
-  }, [projectsList, projectsOrder]);
+  }, [Object.values(workJson), projectsOrder]);
 
   return (
     <section className="w-full lg:w-3/4 lg:px-12 z-10">

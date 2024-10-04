@@ -1,11 +1,14 @@
 import "./globals.css";
-import Header from "./components/Header.js";
-import LateralProfile from "./components/LateralProfile.js";
-import SubLayout from "./SubLayout";
-import { Provider } from "./context/utilsContext";
+import Header from "./_components/Header.js";
+import LateralProfile from "./_components/LateralProfile.js";
+import SubLayout from "./_components/SubLayout";
+import { Provider } from "./_context/utilsContext";
 
 export const metadata = {
-  title: "¡Bienvenido!",
+  title: {
+    default: "¡Bienvenido!",
+    template: "%s | Uriel Agüero Portafolio",
+  },
   description:
     "¿Buscas crear un sitio altamente personalizado y funcional para tu comercio? Estoy para ayudarte, ¡hablemos!",
   keywords: [
@@ -36,9 +39,7 @@ export const metadata = {
       "¿Buscas crear un sitio altamente personalizado y funcional para tu comercio? Estoy para ayudarte, ¡hablemos!",
     image: "@/app/public/image/favicon.ico",
     type: "website",
-    title: "Uriel Agüero portfolio",
     locale: "es_ES",
-    title: "Uriel Agüero portfolio",
   },
   link: [
     {

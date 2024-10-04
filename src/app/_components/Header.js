@@ -2,7 +2,7 @@
 import '../globals.css'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCustomContext } from "../context/utilsContext";
+import { useCustomContext } from "../_context/utilsContext";
 
 const Header = () => {
   const { handleChangePointerColor } = useCustomContext();
@@ -34,7 +34,7 @@ const Header = () => {
           >
             <Link
               href="/"
-              className=" h-9 px-2.5 cursor-none flex items-center gap-x-1.5"
+              className=" h-9 px-2.5 flex items-center gap-x-1.5"
             >
               <span
                 className="icon-[gala--portrait2] w-4 h-4"
@@ -53,7 +53,7 @@ const Header = () => {
           >
             <Link
               href="/experience"
-              className=" h-9 px-2.5 cursor-none flex items-center gap-x-1.5"
+              className=" h-9 px-2.5 flex items-center gap-x-1.5"
             >
               <span
                 className="icon-[gala--folder] w-4 h-4"
@@ -72,7 +72,7 @@ const Header = () => {
           >
             <Link
               href="/projects"
-              className=" h-9 px-2.5 cursor-none flex items-center gap-x-1.5"
+              className=" h-9 px-2.5 flex items-center gap-x-1.5"
             >
               <span
                 className="icon-[gala--book] w-4 h-4"
@@ -85,7 +85,7 @@ const Header = () => {
           <li
             className={`${pathname === "/soon" && "border-b-2 border-red-400"}`}
           >
-            <span className=" h-9 px-2.5 cursor-none flex items-center gap-x-1.5">
+            <span className=" h-9 px-2.5 flex items-center gap-x-1.5">
               <span
                 className="icon-[gala--lock] w-4 h-4"
                 role="img"

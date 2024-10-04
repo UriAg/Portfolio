@@ -1,22 +1,12 @@
-"use client";
-import { useSearchParams } from "next/navigation";
-import experience from "../../../../public/experience.json";
-import { useCustomContext } from "@/app/context/utilsContext";
-import Logo from "@/app/components/Logo";
+'use client'
+import { useCustomContext } from "@/app/_context/utilsContext";
+import Logo from "@/app/_components/Logo";
 import Image from "next/image";
-import { useState } from "react";
 
-const SearchParamsHandler = () => {
+
+
+const SearchParamsHandler = ({selectedItem}) => {
   const { handleChangePointerColor, setSelectedImage } = useCustomContext();
-
-  const searchParams = useSearchParams();
-  const id = searchParams.get("id");
-
-  const works = Object.values(experience.work);
-  const projects = Object.values(experience.projects);
-  const jsonJoin = [...works, ...projects];
-
-  const selectedItem = Object.values(jsonJoin).filter((e) => e.id === id);
 
   return (
     <div className="w-full pt-3 z-10">
@@ -31,7 +21,7 @@ const SearchParamsHandler = () => {
           type="button"
           aria-label="Volver"
           onClick={() => window.history.back()}
-          className="cursor-none hover:text-green-600 transition-colors"
+          className=" hover:text-green-600 transition-colors"
           onPointerEnter={() => handleChangePointerColor(true)}
           onPointerLeave={() => handleChangePointerColor(false)}
         >
@@ -78,7 +68,7 @@ const SearchParamsHandler = () => {
               <a
                 href={selectedItem[0].github_link}
                 target="_blank"
-                className="cursor-none text-blue-500 hover:underline"
+                className=" text-blue-500 hover:underline"
                 onPointerEnter={() => handleChangePointerColor(true)}
                 onPointerLeave={() => handleChangePointerColor(false)}
               >
@@ -96,7 +86,7 @@ const SearchParamsHandler = () => {
               <a
                 href={selectedItem[0].link}
                 target="_blank"
-                className="cursor-none text-blue-500 hover:underline"
+                className=" text-blue-500 hover:underline"
                 onPointerEnter={() => handleChangePointerColor(true)}
                 onPointerLeave={() => handleChangePointerColor(false)}
               >

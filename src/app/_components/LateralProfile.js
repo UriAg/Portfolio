@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { useCustomContext } from "../context/utilsContext";
+import { useCustomContext } from "../_context/utilsContext";
 
 const LateralProfile = () => {
   const { handleChangePointerColor } = useCustomContext();
@@ -56,7 +56,7 @@ const LateralProfile = () => {
             >
               <a
                 href="mailto:uriel.aguero1812@gmail.com"
-                className="flex items-center gap-x-2 cursor-none hover:text-green-600"
+                className="flex items-center gap-x-2 hover:text-green-600"
               >
                 <span
                   className="icon-[bi--envelope]"
@@ -93,7 +93,7 @@ const LateralProfile = () => {
               <a
                 href="https://www.linkedin.com/in/uri-aguero"
                 target="_blank"
-                className="flex items-center gap-x-2 cursor-none"
+                className="flex items-center gap-x-2"
               >
                 <span
                   className="icon-[bi--linkedin]"
@@ -111,7 +111,7 @@ const LateralProfile = () => {
               <a
                 href="https://github.com/UriAg"
                 target="_blank"
-                className="flex items-center gap-x-2 cursor-none"
+                className="flex items-center gap-x-2"
               >
                 <span
                   className="icon-[uiw--github]"
@@ -129,7 +129,7 @@ const LateralProfile = () => {
               <a
                 href="/Uriel_Aguero_fullstack_cv.pdf"
                 download
-                className="flex items-center gap-x-2 cursor-none"
+                className="flex items-center gap-x-2"
               >
                 <span
                   className="icon-[hugeicons--google-sheet]"
