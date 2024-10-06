@@ -32,8 +32,10 @@ const Home = () => {
           <Logo icon="icon-[logos--tailwindcss-icon]" tooltipText="Tailwind" />
           <Logo icon="icon-[logos--bootstrap]" tooltipText="Bootstrap" />
           <Logo icon="icon-[logos--firebase]" tooltipText="Firebase" />
+          <Logo icon="icon-[logos--vue]" tooltipText="Vue" />
           <Logo icon="icon-[logos--material-ui]" tooltipText="Material UI" />
           <Logo icon="icon-[logos--javascript]" tooltipText="JavaScript" />
+          <Logo icon="icon-[devicon--nestjs]" tooltipText="NestJS" />
           <Logo icon="icon-[logos--typescript-icon]" tooltipText="TypeScript" />
           <Logo icon="icon-[logos--react]" tooltipText="ReactJS" />
           <Logo icon="icon-[logos--nextjs-icon]" tooltipText="NextJS" />
