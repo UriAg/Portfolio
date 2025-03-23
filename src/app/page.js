@@ -36,12 +36,16 @@ const Home = () => {
           <Logo icon="icon-[logos--material-ui]" tooltipText="Material UI" />
           <Logo icon="icon-[logos--javascript]" tooltipText="JavaScript" />
           <Logo icon="icon-[devicon--nestjs]" tooltipText="NestJS" />
+          <Logo icon="icon-[devicon--angular]" tooltipText="Angular" />
           <Logo icon="icon-[logos--typescript-icon]" tooltipText="TypeScript" />
+          <Logo icon="icon-[logos--mysql-icon]" tooltipText="MySQL" />
+          <Logo icon="icon-[file-icons--cordova]" tooltipText="Apache Cordova" />
           <Logo icon="icon-[logos--react]" tooltipText="ReactJS" />
           <Logo icon="icon-[logos--nextjs-icon]" tooltipText="NextJS" />
           <Logo icon="icon-[logos--nodejs-icon]" tooltipText="NodeJS" />
           <Logo icon="icon-[logos--express] invert" tooltipText="ExpressJS" />
           <Logo icon="icon-[logos--git-icon]" tooltipText="Git" />
+          <Logo icon="icon-[logos--docker-icon]" tooltipText="Docker" />
           <Logo icon="icon-[logos--mongodb-icon]" tooltipText="MongoDB" />
         </div>
       </div>

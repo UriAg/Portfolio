@@ -1,5 +1,33 @@
 {
   "work": {
+    "consultores": {
+      "title": "Consultores de empresas",
+      "id": "cde",
+      "description": "<b style='color:rgb(59 130 246)'>●</b> Desarrollo de nuevas funcionalidades y mantenimiento en aplicaciones internas y externas, utilizando <b style='color:rgb(59 130 246)'>NestJS</b> (<b style='color:rgb(59 130 246)'>Node.js</b>) con <b style='color:rgb(59 130 246)'>TypeScript</b> para el backend y <b style='color:rgb(59 130 246)'>Vue</b>.js para el frontend.<br><b style='color:rgb(59 130 246)'>●</b> Manejo de <b style='color:rgb(59 130 246)'>TypeORM</b> para la interacción con bases de datos <b style='color:rgb(59 130 246)'>SQL</b>, optimización de queries y mejora del rendimiento en la obtención de datos (recibos de sueldo, liquidaciones finales, documentación sensible).<br><b style='color:rgb(59 130 246)'>●</b> Implementación de mejoras en la calidad del código en frontend y backend, aplicando buenas prácticas, refactorización y optimización de procesos.<br><b style='color:rgb(59 130 246)'>●</b> Desarrollo y mantenimiento de la versión mobile de la aplicación de recibos, utilizando <b style='color:rgb(59 130 246)'>Apache Cordova</b> para adaptarla a dispositivos móviles.<br><b style='color:rgb(59 130 246)'>●</b> Integración y colaboración con las áreas CRM y Profit para generación y obtención de información laboral.<br><b style='color:rgb(59 130 246)'>●</b> Desarrollo y soporte de tres aplicaciones clave:<br><span style='margin-left: 2em'/><b style='color:rgb(11 143 1)'>●</b> Portal de Recibos: App destinada a la carga y consulta de recibos de sueldo para colaboradores.</span><br><span style='margin-left: 2em'/><b style='color:rgb(11 143 1)'>●</b> Backoffice: Gestión de información de colaboradores y procesos internos.</span><br><span style='margin-left: 2em'/><b style='color:rgb(11 143 1)'>●</b> Plataforma para Clientes: Firma de presupuestos y consulta de datos relevantes.</span><br><b style='color:rgb(59 130 246)'>●</b> Trabajo bajo metodologías <b style='color:rgb(59 130 246)'>Scrum</b> y <b style='color:rgb(59 130 246)'>Kanban</b>, con gestión de incidencias en <b style='color:rgb(59 130 246)'>Jira</b> y control de versiones en <b style='color:rgb(59 130 246)'>Bitbucket</b>.<br><b style='color:rgb(59 130 246)'>●</b> Responsable del área de desarrollo, gestionando tareas en simultáneo y asegurando la continuidad operativa del sistema.",
+      "icon": [
+        "icon-[logos--vue]",
+        "icon-[devicon--nestjs]",
+        "icon-[logos--bootstrap]",
+        "icon-[logos--git-icon]",
+        "icon-[logos--typescript-icon]",
+        "icon-[devicon--angular]",
+        "icon-[file-icons--cordova]",
+        "icon-[logos--mysql-icon]",
+        "icon-[logos--docker-icon]"
+      ],
+      "date_start": "14/11/2024",
+      "date_end": "Actualidad",
+      "link": "https://www.consultoresdeempresas.com/",
+      "images": [
+        "cde-1.png",
+        "cde-2.png",
+        "cde-4.png",
+        "cde-5.png",
+        "cde-3.png"
+      ]
+    }
+  },
+  "projects": {
     "natural": {
       "title": "Natural Icy Market",
       "id": "natural",
@@ -43,7 +71,7 @@
         "icon-[logos--mongodb-icon]"
       ],
       "date_start": "27/06/2024",
-      "date_end": "Actualidad",
+      "date_end": "03/08/2024",
       "link": "https://www.trabajoscba.com",
       "images": [
         "tcba-1.png",
@@ -52,9 +80,7 @@
         "tcba-4.png",
         "tcba-5.png"
       ]
-    }
-  },
-  "projects": {
+    },
     "flart": {
       "title": "Flart",
       "id": "flart",
