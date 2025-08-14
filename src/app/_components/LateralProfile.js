@@ -127,7 +127,7 @@ const LateralProfile = () => {
               onPointerLeave={() => handleChangePointerColor(false)}
             >
               <a
-                href="/Uriel_Aguero_fullstack_cv.pdf"
+                href="/Uriel_Aguero_frontend_cv.pdf"
                 download
                 className="flex items-center gap-x-2"
               >
