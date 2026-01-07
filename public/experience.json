@@ -113,29 +113,6 @@
       "link": "https://expense-recorder-pi.vercel.app/",
       "images": ["exviser-1.png", "exviser-2.png", "exviser-3.png", "exviser-4.png"]
     },
-    "archiver": {
-      "title": "Archivero",
-      "id": "archiver",
-      "description": "Archivero para la creación y búsqueda de registros de cualquier tipo. Se implementó el uso de librerías como Toastify y SweetAlert, manejo del DOM, validación de campos, llamadas síncronas/asíncronas, existencia y manipulación de datos e interactividad mediante JS vanilla",
-      "icon": [
-        "icon-[logos--css-3]",
-        "icon-[logos--git-icon]",
-        "icon-[logos--html-5]",
-        "icon-[logos--javascript]"
-      ],
-      "date_start": "04/05/2020",
-      "date_end": "26/06/2020",
-      "github_link": "https://github.com/UriAg/PreEntrega3_JS_Aguero",
-      "link": "https://uriag.github.io/PreEntrega3_JS_Aguero/",
-      "images": [
-        "archiver-1.png",
-        "archiver-2.png",
-        "archiver-3.png",
-        "archiver-4.png",
-        "archiver-5.png",
-        "archiver-6.png"
-      ]
-    },
     "wire": {
       "title": "Sección minima admisible",
       "id": "wire",
