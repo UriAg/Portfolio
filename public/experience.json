@@ -81,38 +81,6 @@
         "tcba-5.png"
       ]
     },
-    "flart": {
-      "title": "Flart",
-      "id": "flart",
-      "description": "Plantilla desktop para ecommerce básico, sitio planteado alta y fácilmente personalizable. Entrega final de la carrera frontend de Coderhouse, etapa ReactJS. Se demuestran altos conocimientos en creacion, manejo de registros en Firestore y limpieza estructural en conjunto de buena arquitectura de hooks vanilla/personalizados, enrutamientos y validaciones",
-      "icon": [
-        "icon-[logos--react]",
-        "icon-[logos--git-icon]",
-        "icon-[logos--css-3]",
-        "icon-[logos--firebase]"
-      ],
-      "date_start": "14/06/2023",
-      "date_end": "09/10/2023",
-      "github_link": "https://github.com/UriAg/EntregaFinal_ReactJS_Aguero",
-      "link": "https://entrega-final-react-js-aguero.vercel.app/",
-      "images": ["flart-1.png", "flart-2.png", "flart-3.png", "flart-4.png"]
-    },
-    "exviser": {
-      "title": "Exviser",
-      "id": "exviser",
-      "description": "Aplicación web para moviles creada por y para estudiantes, su objetivo es mantener un registro de sus gastos para asegurar un estratégico manejo de su economía. Desarrollado para celulares",
-      "icon": [
-        "icon-[logos--material-ui]",
-        "icon-[logos--react]",
-        "icon-[logos--git-icon]",
-        "icon-[logos--sass]"
-      ],
-      "date_start": "09/04/2024",
-      "date_end": "05/05/2024",
-      "github_link": "https://github.com/UriAg/Expense-recorder",
-      "link": "https://expense-recorder-pi.vercel.app/",
-      "images": ["exviser-1.png", "exviser-2.png", "exviser-3.png", "exviser-4.png"]
-    },
     "wire": {
       "title": "Sección minima admisible",
       "id": "wire",
